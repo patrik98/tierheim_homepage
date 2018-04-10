@@ -2,6 +2,7 @@
 
 <header>
     <!-- Bootstrap Ressourcen -->
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -11,9 +12,7 @@
 </header>
 
 <body>
-        
 <div><img src="images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
-    
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -30,148 +29,47 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="#">Über uns</a></li>
+        <li class="active"><a href="#">Über uns</a></li>
         <li><a href="#">Tiere</a></li>
         <li><a href="#">Hilf uns!</a></li>
         <li><a href="#">Kontakt</a></li>
       </ul>
     <form class="navbar-form navbar-right">
-        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#signUp">Sign Up</button>
+        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#signUp">Registrieren</button>
         <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#login">Login</button>
       </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+    
     <div class="container-fluid">
-        
-        <!-- Thumbnails & Links zu den Tierprofilen -->
         <div class="row">
-            <div class="col-xs-8 col-md-4">
+            <div class="col-sm-3 col-md-4">
                 <div class="thumbnail">
                     <img src="images/600x600.jpg" alt="" style="width:100%">
-                    <div class="caption">
-                      <p>Bello, 10 Jahre alt, verspielt</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-xs-0 col-md-8">
-                <h2>Überschrift 2</h2>
+            <div class="col-xs-8 col-sm-9 col-md-8">
+                <h1>Überschrift 1</h1>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
-        </div>
+        </div>     
         
-        <!-- Übersicht Aktivitäten -->
+        <hr/>
         
-       <!-- Montag - Mittwoch -->
         <div class="row">
-            
-            <!-- Montag -->
-            <div class="col-xs-4">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse1">Montag</a>
-                      </h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
+            <div class="col-sm-3 col-md-4">
+                <div class="thumbnail">
+                    <img src="images/600x600.jpg" alt="" style="width:100%">
                 </div>
             </div>
-
-            <!-- Dienstag -->
-            <div class="col-xs-4">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse2">Dienstag</a>
-                      </h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-xs-8 col-sm-9 col-md-8">
+                <h1>Überschrift 1</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
-        
-            <!-- Mittwoch -->
-            <div class="col-xs-4">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse3">Mittwoch</a>
-                      </h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Donnerstag - Samstag -->
-        <div class="row">
-            <!-- Donnerstag -->
-            <div class="col-xs-4">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse4">Donnerstag</a>
-                      </h4>
-                    </div>
-                    <div id="collapse4" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            
-            <!-- Freitag -->
-            <div class="col-xs-4">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse5">Freitag</a>
-                      </h4>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            
-            <!-- Samstag -->
-            <div class="col-xs-4">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse6">Samstag</a>
-                      </h4>
-                    </div>
-                    <div id="collapse6" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
+        </div> 
     </div>
-    
+
     <footer>
     <div class="footer" id="footer">
         <div class="container">
@@ -253,7 +151,7 @@
     <!--/.footer-bottom--> 
 </footer>
     
-    <!-- Modal Sign up-->
+<!-- Modal Sign up-->
 <div id="signUp" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -266,11 +164,11 @@
       <div class="modal-body">
           <form action="/action_page.php">
               <div class="form-group">
-                <label for="email">Email address:</label>
+                <label for="email">E-Mail-Adresse:</label>
                 <input type="email" class="form-control" id="email">
               </div>
               <div class="form-group">
-                <label for="pwd">Password:</label>
+                <label for="pwd">Passwort:</label>
                 <input type="password" class="form-control" id="pwd">
               </div>
             </form>
@@ -296,15 +194,15 @@
       <div class="modal-body">
           <form action="/action_page.php">
               <div class="form-group">
-                <label for="email">Email address:</label>
+                <label for="email">E-Mail-Adresse:</label>
                 <input type="email" class="form-control" id="email2">
               </div>
               <div class="form-group">
-                <label for="pwd">Password:</label>
+                <label for="pwd">Passwort:</label>
                 <input type="password" class="form-control" id="pwd2">
               </div>
               <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
+                <label><input type="checkbox"> eingeloggt bleiben</label>
               </div>
             </form>
       </div>
@@ -314,5 +212,6 @@
     </div>
 
   </div>
+</div>
 </body>
 </html>
