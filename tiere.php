@@ -8,13 +8,11 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <!-- Selbsterstellte Ressourcen -->
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
-
 <div><img src="images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -32,7 +30,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Über uns</a></li>
+                <li class=><a href="index.php">Über uns</a></li>
                 <li class="active"><a href="tiere.php">Tiere</a></li>
                 <li><a href="#">Hilf uns!</a></li>
                 <li><a href="#">Kontakt</a></li>
@@ -46,244 +44,256 @@
 </nav>
 
 <main>
-<!-- Profilliste -->
-<div class="container-fluid"> <!-- umfassender Container -->
 
-    <div class = "row">
-        <div class="col-sm-6 col-md-4">
+    <!-- Profilliste -->
+    <div class="container-fluid"> <!-- umfassender Container -->
 
-        <div class="well well-sm">
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
-                </div>
-                <div class="col-sm-6 col-md-8">
-                    <h4>
-                        *NAME aus DB*</h4>
-                    <p>
-                        <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                    <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                    <p>
+        <!-- row 1 -->
+        <div class = "row">
+            <div class="col-sm-6 col-md-4">
 
-                        <!-- Split button -->
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">
-                            Profil anzeigen</button>
+                <!-- Profil 1 -->
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
 
-        <div class="col-sm-6 col-md-4">
+            <!-- Profil 2 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
 
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
+                </div>
+            </div>
 
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
+            <!-- Profil 3 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
+        <!-- row 2 -->
+        <div class = "row">
+            <div class="col-sm-6 col-md-4">
 
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                <!-- Profil 4 -->
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
+                </div>
+            </div>
 
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
+            <!-- Profil 5 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profil 6 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
+        <!-- row 3 -->
+        <div class = "row">
+            <div class="col-sm-6 col-md-4">
 
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                <!-- Profil 7 -->
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
+                </div>
+            </div>
 
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
+            <!-- Profil 8 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profil 9 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                *NAME aus DB*</h4>
+                            <p>
+                                <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
+                            <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
+                            <p>
+
+                                <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">
+                                    Profil anzeigen</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
-
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
-
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
-
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
-
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
-
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-8 col-md-4">
-
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>
-                            *NAME aus DB*</h4>
-                        <p>
-                            <i class="glyphicon glyphicon-gift"></i> *gebdat aus DB*</p>
-                        <i class="glyphicon glyphicon-info-sign"></i> *tierart aus DB*
-                        <p>
-
-                            <!-- Split button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">
-                                Profil anzeigen</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
     </div>
-</div>
 </main>
 
 <footer>
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
@@ -292,7 +302,7 @@
                         <li> <a href="#"> Lorem Ipsum </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
@@ -301,7 +311,7 @@
                         <li> <a href="#"> Lorem Ipsum </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
@@ -310,7 +320,7 @@
                         <li> <a href="#"> Lorem Ipsum </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
@@ -422,7 +432,5 @@
 
     </div>
 </div>
-
-
 </body>
 </html>
