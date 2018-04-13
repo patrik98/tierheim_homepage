@@ -1,15 +1,16 @@
-<!doctype html>
-
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Über uns</title>
     <!-- Bootstrap Ressourcen -->
-    <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    
+
     <!-- Selbsterstellte Ressourcen -->
     <link rel="stylesheet" href="css/style.css"/>
-</header>
+</head>
 
 <body>
 <div><img src="images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
@@ -29,8 +30,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Über uns</a></li>
-        <li><a href="#">Tiere</a></li>
+        <li class="active"><a href="index.php">Über uns</a></li>
+        <li><a href="tiere.php">Tiere</a></li>
         <li><a href="#">Hilf uns!</a></li>
         <li><a href="#">Kontakt</a></li>
       </ul>
