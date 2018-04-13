@@ -47,10 +47,10 @@
 
 <main>
 <!-- Profilliste -->
-<div class="container-fluid">
+<div class="container-fluid"> <!-- umfassender Container -->
 
     <div class = "row">
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
         <div class="well well-sm">
             <div class="row">
@@ -75,7 +75,7 @@
         </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -150,7 +150,7 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -175,7 +175,7 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -200,7 +200,7 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -225,7 +225,7 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-sm-6 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -250,7 +250,7 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-xs-8 col-md-4">
 
             <div class="well well-sm">
                 <div class="row">
@@ -283,7 +283,7 @@
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
@@ -292,7 +292,7 @@
                         <li> <a href="#"> Lorem Ipsum </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
@@ -301,7 +301,7 @@
                         <li> <a href="#"> Lorem Ipsum </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
@@ -310,7 +310,7 @@
                         <li> <a href="#"> Lorem Ipsum </a> </li>
                     </ul>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-sm-6">
                     <h3> Lorem Ipsum </h3>
                     <ul>
                         <li> <a href="#"> Lorem Ipsum </a> </li>
