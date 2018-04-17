@@ -83,19 +83,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="original/css/bootstrap.min.css"/>
 
     <!-- Selbsterstellte Ressourcen -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="original/css/style.css"/>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="original/js/bootstrap.min.js"></script>
     <style type="text/css">
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 </head>
 <body>
-<div><img src="images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
+<div><img src="original/images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">

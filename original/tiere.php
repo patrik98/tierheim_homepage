@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <title>Tiere</title>
     <!-- Bootstrap Ressourcen -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="original/css/bootstrap.min.css"/>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="original/js/bootstrap.min.js"></script>
 
     <!-- Selbsterstellte Ressourcen -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="original/css/style.css"/>
 </head>
 
 <body>
-<div><img src="images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
+<div><img src="original/images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
