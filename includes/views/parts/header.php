@@ -28,14 +28,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Tierheim</a>
+            <a class="navbar-brand" href="index">Tierheim</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Über uns</a></li>
-                <li><a href="tiere.php">Tiere</a></li>
+                <li  <?php if($this->current == "index"): ?>class="active"<?php endif; ?>><a href="index">Über uns</a></li>
+                <li <?php if($this->current == "tiere"): ?>class="active"<?php endif; ?>><a href="tiere">Tiere</a></li>
                 <li><a href="#">Hilf uns!</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>

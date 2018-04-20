@@ -7,7 +7,7 @@ echo $this->header;
         <div class="row">
             <div class="col-sm-3 col-md-4">
                 <div class="thumbnail">
-                    <img src="original/images/600x600.jpg" alt="" style="width:100%">
+                    <img src="images/600x600.jpg" alt="" style="width:100%">
                 </div>
             </div>
             <div class="col-xs-8 col-sm-9 col-md-8">
@@ -21,7 +21,7 @@ echo $this->header;
         <div class="row">
             <div class="col-sm-3 col-md-4">
                 <div class="thumbnail">
-                    <img src="original/images/600x600.jpg" alt="" style="width:100%">
+                    <img src="images/600x600.jpg" alt="" style="width:100%">
                 </div>
             </div>
             <div class="col-xs-8 col-sm-9 col-md-8">
