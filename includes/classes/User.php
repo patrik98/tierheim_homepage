@@ -172,12 +172,12 @@ class User extends Database
 		}
 	}
 
-	public static function existsWithUsername($username)
+	public static function existsWithUsername($email)
 	{
 		$db = new Database();
 
 		//check if user exists...
-		$sql = "SELECT COUNT(`id`) AS num FROM `user` WHERE `name`='".$db->escapeString($username)."'";
+		$sql = "SELECT COUNT(`id`) AS num FROM `nutzer` WHERE `email`='".$db->escapeString($email)."'";
 		$result = $db->query($sql);
 
 		$row = $db->fetchObject($result);
@@ -194,10 +194,17 @@ class User extends Database
 	{
 		$db = new Database();
 
-		$username = $db->escapeString($data['username']);
-		$password = password_hash($db->escapeString($data['password']), PASSWORD_BCRYPT);
+        $vname = $db->escapeString($data['vname']);
+        $nname = $db->escapeString($data['nname']);
+        $gebdat = $db->escapeString($data['gebdat']);
+        $password = password_hash($db->escapeString($data['pwd']), PASSWORD_BCRYPT);
+        $email = $db->escapeString($data['email']);
+		$strasse = $db->escapeString($data['strasse']);
+        $hausnr = $db->escapeString($data['hausnr']);
+        $plz = $db->escapeString($data['plz']);
+        $ort = $db->escapeString($data['ort']);
 
-		$sql = "INSERT INTO `user`(`name`,`password`) VALUES('".$username."','".$password."')";
+		$sql = "INSERT INTO `nutzer`(`vname`,`nname`,`gebdat`,`passwort`,`email`,`strasse`,`hausnr`,`plz`,`ort`) VALUES('".$vname."','".$nname."','".$gebdat."','".$password."','".$email."','".$strasse."','".$hausnr."','".$plz."','".$ort."')";
 		$db->query($sql);
 	}
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Über uns</title>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css"/>
 
     <?php if($this->current == 'login'): ?>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/login_alt.js"></script>
     <?php endif; ?>
 </head>
 
@@ -40,8 +40,8 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
             <form class="navbar-form navbar-right">
-                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" a href="tierheim_homepage/login">Registrieren</button>
-                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" a href="tierheim_homepage/login">Login</button>
+                <a href="register"><button type="button" class="btn btn-default btn-sm">Registrieren</button></a>
+                <a href="login"><button type="button" class="btn btn-default btn-sm">Login</button></a>
             </form>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
