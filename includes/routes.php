@@ -8,10 +8,14 @@ $route['/index.html'] = array('controller' => 'IndexController', 'uniqueName' =>
 $route['/tiere'] = array('controller' => 'TiereController', 'uniqueName' => 'tiere');
 $route['/tiere.html'] = array('controller' => 'TiereController', 'uniqueName' => 'tiere');
 
+$route['/tierprofil'] = array('controller' => 'TierprofilController', 'uniqueName' => 'tiere');
+$route['/tierprofil.html'] = array('controller' => 'TierprofilController', 'uniqueName' => 'tiere');
 
 $route['/login'] = array('controller' => 'LoginController', 'uniqueName' => 'login');
 $route['/login.html'] = array('controller' => 'LoginController', 'uniqueName' => 'login');
 
 $route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 $route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
+
+
 

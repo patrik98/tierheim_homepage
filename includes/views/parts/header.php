@@ -40,8 +40,8 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
             <form class="navbar-form navbar-right">
-                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#signUp">Registrieren</button>
-                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#login">Login</button>
+                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" a href="tierheim_homepage/login">Registrieren</button>
+                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" a href="tierheim_homepage/login">Login</button>
             </form>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
