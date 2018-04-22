@@ -11,6 +11,11 @@ echo $this->header;
         Der Benutzer wurde erfolgreich registiert. Sie können sich nun <a href="login">hier einloggen</a>.
     </p>
 
+<?php elseif ($this->EmailInUse): true?>
+    <p class="alert alert-danger">
+        Diese E-Mail-Adresse wurde bereits registriert. Zur <a href="register">Registrierung zurückkehren</a>.
+    </p>
+
 <?php else: ?>
 
     <div class="row">
@@ -107,12 +112,6 @@ echo $this->header;
 
     </form>
 
-<?php endif; ?>
-
-    <?php if($this->EmailInUse): true?>
-    <p class="alert alert-warning">
-        Die E-Mail-Adresse wurde bereits benutzt. Sie können sich nun <a href="login">hier einloggen</a>.
-    </p>
 <?php endif; ?>
 
 </div>
