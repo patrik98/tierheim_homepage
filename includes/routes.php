@@ -5,8 +5,8 @@ $route['/'] = array('controller' => 'IndexController', 'uniqueName' => 'index');
 $route['/index'] = array('controller' => 'IndexController', 'uniqueName' => 'index');
 $route['/index.html'] = array('controller' => 'IndexController', 'uniqueName' => 'index');
 
-$route['/tiere'] = array('controller' => 'IndexController', 'uniqueName' => 'tiere');
-$route['/tiere.html'] = array('controller' => 'IndexController', 'uniqueName' => 'tiere');
+$route['/tiere'] = array('controller' => 'TiereController', 'uniqueName' => 'tiere');
+$route['/tiere.html'] = array('controller' => 'TiereController', 'uniqueName' => 'tiere');
 
 $route['/tierprofil'] = array('controller' => 'TierprofilController', 'uniqueName' => 'tiere');
 $route['/tierprofil.html'] = array('controller' => 'TierprofilController', 'uniqueName' => 'tiere');
