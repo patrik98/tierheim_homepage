@@ -15,11 +15,6 @@ class SignUpController extends Controller
     {
         $this->view->title = 'Register';
 
-        if($this->user->isLoggedIn)
-        {
-            $this->user->redirectToIndex();
-        }
-
         $this->checkForRegisterPost();
     }
 
@@ -64,26 +59,19 @@ class SignUpController extends Controller
                     if (User::existsWithUsername($email) == false) {
                         User::createUser(array('vname' => $vname, 'nname' => $nname, 'gebdat' => $gebdat,'pwd' => $password, 'email' => $email,'strasse' => $strasse, 'hausnr' => $hausnr, 'plz' => $plz, 'ort' => $ort));
 
-                        $jsonResponse = new JSON();
-                        $jsonResponse->result = true;
-                        $jsonResponse->setMessage("Benutzer wurde erfolgreich hinzugefügt!");
-                        $jsonResponse->send();
+
+                        $this->view->UserRegistered = true;
                     } else {
                         $errorFields['email'] = "E-Mail wurde bereits benutzt!";
 
-                        $jsonResponse = new JSON();
-                        $jsonResponse->result = false;
-                        $jsonResponse->setData(array('errorFields' => $errorFields));
-                        $jsonResponse->send();
+                        $this->view->EmailInUse = true;
                     }
 
                 }
             }
 
-            $jsonResponse = new JSON();
-            $jsonResponse->result = false;
-            $jsonResponse->setData(array('errorFields' => $errorFields));
-            $jsonResponse->send();
+            $this->view->FieldsEmpty = true;
+            $this->view->errorFields = $errorFields;
         }
     }
 }

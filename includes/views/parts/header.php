@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css"/>
 
     <?php if($this->current == 'login'): ?>
-    <script type="text/javascript" src="js/login_alt.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
     <?php endif; ?>
 </head>
 

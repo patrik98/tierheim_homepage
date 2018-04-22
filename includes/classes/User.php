@@ -2,12 +2,12 @@
 
 /**
  * Class User
- * Provides methods to login and logout - or to check if someone is loggedIn
+ * Provnutzerides methods to login and logout - or to check if someone is loggedIn
  */
 class User extends Database
 {
-	public $username = '';
-	public $id = '';
+	public $email = '';
+	public $nutzerid = '';
 
 	public $isLoggedIn = false;
 
@@ -83,25 +83,25 @@ class User extends Database
 		exit();
 	}
 
-	public function login($username, $password)
+	public function login($email, $passwort)
 	{
-		$sql = "SELECT `id`,`password` FROM `user` WHERE `name`='" . $this->escapeString($username) . "'";
+		$sql = "SELECT `nutzerid`,`passwort` FROM `nutzer` WHERE `email`='" . $this->escapeString($email) . "'";
 		$result = $this->query($sql);
 
 
 		if($this->numRows($result) == 0)
 		{
 			$this->isLoggedIn = false;
-			return false; //username not found!
+			return false; //email not found!
 		}
 
 		//now lets check for the password
 		$row = $this->fetchObject($result);
 
-		if(password_verify($password, $row->password))
+		if(password_verify($passwort, $row->password))
 		{
-			$this->username = $username;
-			$this->id = $row->id;
+			$this->email = $email;
+			$this->nutzerid = $row->nutzerid;
 			$this->isLoggedIn = true;
 
 			return true;
@@ -111,10 +111,10 @@ class User extends Database
 		return false;
 	}
 
-	public static function getById($id)
+	public static function getById($nutzerid)
 	{
-		$id = intval($id);
-		$sql = "SELECT * FROM `user` WHERE `id`=".$id;
+		$nutzerid = intval($nutzerid);
+		$sql = "SELECT * FROM `nutzer` WHERE `nutzerid`=".$nutzerid;
 
 		$db = new Database();
 		$result = $db->query($sql);
@@ -125,8 +125,8 @@ class User extends Database
 			$data = $db->fetchObject($result);
 			$user = new User();
 
-			$user->username = $data['username'];
-			$user->id = $id;
+			$user->email = $data['email'];
+			$user->nutzerid = $nutzerid;
 
 			return $user;
 		}
@@ -136,8 +136,8 @@ class User extends Database
 
 	public function logout()
 	{
-		$this->username = null;
-		$this->id = null;
+		$this->email = null;
+		$this->nutzerid = null;
 		$this->isLoggedIn = false;
 		$this->shipIt();
 
@@ -174,11 +174,11 @@ class User extends Database
 
 	public static function existsWithUsername($email)
 	{
-		$db = new Database();
+        $db = new Database();
 
-		//check if user exists...
-		$sql = "SELECT COUNT(`id`) AS num FROM `nutzer` WHERE `email`='".$db->escapeString($email)."'";
-		$result = $db->query($sql);
+        //check if user exists...
+        $sql = "SELECT COUNT(`nutzerid`) AS num FROM `nutzer` WHERE `email`='".$db->escapeString($email)."'";
+        $result = $db->query($sql);
 
 		$row = $db->fetchObject($result);
 
@@ -197,18 +197,18 @@ class User extends Database
         $vname = $db->escapeString($data['vname']);
         $nname = $db->escapeString($data['nname']);
         $gebdat = $db->escapeString($data['gebdat']);
-        $password = password_hash($db->escapeString($data['pwd']), PASSWORD_BCRYPT);
+        $passwort = password_hash($db->escapeString($data['pwd']), PASSWORD_BCRYPT);
         $email = $db->escapeString($data['email']);
 		$strasse = $db->escapeString($data['strasse']);
         $hausnr = $db->escapeString($data['hausnr']);
         $plz = $db->escapeString($data['plz']);
         $ort = $db->escapeString($data['ort']);
 
-		$sql = "INSERT INTO `nutzer`(`vname`,`nname`,`gebdat`,`passwort`,`email`,`strasse`,`hausnr`,`plz`,`ort`) VALUES('".$vname."','".$nname."','".$gebdat."','".$password."','".$email."','".$strasse."','".$hausnr."','".$plz."','".$ort."')";
+		$sql = "INSERT INTO `nutzer`(`vname`,`nname`,`gebdat`,`passwort`,`email`,`strasse`,`hausnr`,`plz`,`ort`) VALUES('".$vname."','".$nname."','".$gebdat."','".$passwort."','".$email."','".$strasse."','".$hausnr."','".$plz."','".$ort."')";
 		$db->query($sql);
 	}
 
-	public static function deleteUser($id)
+	public static function deleteUser($nutzerid)
 	{
 		//@TODO
 	}
@@ -220,11 +220,11 @@ class User extends Database
 
 	public function delete()
 	{
-		self::deleteUser($this->id);
+		self::deleteUser($this->nutzerid);
 	}
 
 	public function update($data)
 	{
-		self::updateUser($this->id, $data);
+		self::updateUser($this->nutzerid, $data);
 	}
 }
