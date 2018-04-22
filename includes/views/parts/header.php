@@ -11,9 +11,6 @@
     <!-- Selbsterstellte Ressourcen -->
     <link rel="stylesheet" href="css/main.css"/>
 
-    <?php if($this->current == 'login'): ?>
-    <script type="text/javascript" src="js/login.js"></script>
-    <?php endif; ?>
 </head>
 
 <body>

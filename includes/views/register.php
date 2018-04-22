@@ -109,6 +109,12 @@ echo $this->header;
 
 <?php endif; ?>
 
+    <?php if($this->EmailInUse): true?>
+    <p class="alert alert-warning">
+        Die E-Mail-Adresse wurde bereits benutzt. Sie können sich nun <a href="login">hier einloggen</a>.
+    </p>
+<?php endif; ?>
+
 </div>
 
 <?php

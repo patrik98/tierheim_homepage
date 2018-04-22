@@ -12,7 +12,7 @@ class TiereController extends Controller
 	public function run()
 	{
 		$this->view->title = "Tiere";
-		$this->view->username = $this->user->username;
+		$this->view->email = $this->user->username;
 
 		//$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
 	}

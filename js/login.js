@@ -5,33 +5,33 @@
  */
 jQuery(document).ready(function() {
 
-    var registerForm = $('#registerForm');
+    var registerModal = $('#registerModal');
 
-  /*  $('.registerOverlay').click(function(e) {
+    $('.registerOverlay').click(function(e) {
         e.preventDefault();
 
         registerModal.modal('show');
-    });*/
+    });
 
 
     //this is that we are able to trigger a submit although a button was clicked outside of your form!
-    registerForm.find('.btn-success').click(function() {
-        registerForm.find('form').trigger('submit', [this]);
+    registerModal.find('.btn-primary').click(function() {
+        registerModal.find('form').trigger('submit', [this]);
     });
 
     //so we have some input fields
-    registerForm.find('form').bind('submit', function(e, that) {
+    registerModal.find('form').bind('submit', function(e, that) {
         e.preventDefault();
 
-        registerForm.find('.btn-success').prop('disabled', true); //prevent sending the formular again while we check it
+        registerModal.find('.btn-primary').prop('disabled', true); //prevent sending the formular again while we check it
 
         hasError = false; //we are positive...
 
         if(typeof that === 'undefined') {
-            that = registerForm.find('.btn-success').get(0);
+            that = registerModal.find('.btn-primary').get(0);
         }
 
-        var nonEmptyFields = ['#vname','#nname','#gebdat','#pwd','#pwd2','#email', '#strasse', '#hausnr', '#plz', '#ort'];
+        var nonEmptyFields = ['#name', '#pwd', '#pwd2'];
 
         for(i = 0; i < nonEmptyFields.length; i++) {
             if($(nonEmptyFields[i]).val() == '') {
@@ -51,7 +51,7 @@ jQuery(document).ready(function() {
                 if($('#pwd').val() != $('#pwd2').val()) {
                     $('#pwd2').closest('.form-group').addClass('has-error');
                     hasError = true;
-                    registerForm.find('.btn-success').prop('disabled', false);
+                    registerModal.find('.btn-primary').prop('disabled', false);
                 } else {
                     //everything fine
 
@@ -59,7 +59,7 @@ jQuery(document).ready(function() {
                         'url': $(this).attr('action'),
                         'method': $(this).attr('method'),
                         'data': $(this).serialize(),
-                        //'dataType': "json",
+                        'dataType': "json",
                         'success': function (receivedData) {
 
                             if(receivedData.result)
@@ -73,14 +73,14 @@ jQuery(document).ready(function() {
                             }
                             else
                             {
-                                registerForm.find('.form-group').removeClass('has-error');
+                                registerModal.find('.form-group').removeClass('has-error');
 
                                 $.each(receivedData.data.errorFields, function(key, value) {
                                     $('#'+key).closest('.form-group').addClass('has-error');
                                 });
                             }
 
-                            registerForm.find('.btn-success').prop('disabled', false);
+                            registerModal.find('.btn-primary').prop('disabled', false);
                         }
                     });
 
@@ -88,7 +88,7 @@ jQuery(document).ready(function() {
             }
         }
 
-        registerForm.find('.btn-success').prop('disabled', false);
+        registerModal.find('.btn-primary').prop('disabled', false);
 
 
     });
