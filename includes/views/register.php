@@ -11,10 +11,6 @@ echo $this->header;
         Der Benutzer wurde erfolgreich registiert. Sie können sich nun <a href="login">hier einloggen</a>.
     </p>
 
-<?php elseif ($this->EmailInUse): true?>
-    <p class="alert alert-danger">
-        Diese E-Mail-Adresse wurde bereits registriert. Zur <a href="register">Registrierung zurückkehren</a>.
-    </p>
 
 <?php else: ?>
 
@@ -28,24 +24,56 @@ echo $this->header;
 
     <form method = "post" class="form-horizontal" id="registerForm" action="register">
 
+        <?php if ($this->EmailInUse): true?>
+
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4>Diese E-Mail-Adresse wird bereits verwendet!</h4>
+                <p>Bitte verwenden Sie eine noch nicht registrierte E-Mail-Adresse.</p>
+            </div>
+
+        <?php elseif ($this->PasswordTooShort): true?>
+
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4>Das Passwort ist zu kurz!</h4>
+                <p>Die Mindestlänge beträgt 8 Zeichen.</p>
+            </div>
+
+        <?php elseif ($this->PasswordMismatch): true?>
+
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4>Die Passwörter stimmen nicht überein!</h4>
+                <p>Bitte prüfen Sie Ihre Eingaben.</p>
+            </div>
+
+        <?php endif; ?>
+
         <div class="form-group">
             <label class="col-xs-12 col-md-2" for="email">E-Mail:</label>
             <div class="col-xs-12 col-md-10">
-                <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail eingeben">
+                <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail eingeben" required>
             </div>
         </div>
 
         <div class="form-group">
             <label class="col-xs-12 col-md-2" for="pwd">Passwort:</label>
             <div class="col-xs-12 col-md-10">
-                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Passwort eingeben">
+                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Passwort eingeben" required>
             </div>
         </div>
 
         <div class="form-group">
             <label class="col-xs-12 col-md-2" for="pwd2">Passwort wiederholen:</label>
             <div class="col-xs-12 col-md-10">
-                <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Passwort wiederholen">
+                <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Passwort wiederholen" required>
             </div>
         </div>
 
@@ -56,21 +84,21 @@ echo $this->header;
         <div class="form-group">
             <label class="col-xs-12 col-md-2" for="vname">Vorname:</label>
             <div class="col-xs-12 col-md-10">
-                <input type="text" class="form-control" id="vname" name="vname" placeholder="Vorname">
+                <input type="text" class="form-control" id="vname" name="vname" placeholder="Vorname" required>
             </div>
         </div>
 
         <div class="form-group">
             <label class="col-xs-12 col-md-2" for="nname">Nachname:</label>
             <div class="col-xs-12 col-md-10">
-                <input type="text" class="form-control" id="nname" name="nname" placeholder="Nachname">
+                <input type="text" class="form-control" id="nname" name="nname" placeholder="Nachname" required>
             </div>
         </div>
 
         <div class="form-group">
             <label class="col-xs-12 col-md-2" for="gebdat">Geburtsdatum:</label>
             <div class="col-xs-12 col-md-10">
-                <input type="date" class="form-control" id="gebdat" name="gebdat">
+                <input type="date" class="form-control" id="gebdat" name="gebdat" required>
             </div>
         </div>
 

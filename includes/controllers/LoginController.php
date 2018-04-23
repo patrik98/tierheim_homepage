@@ -27,14 +27,15 @@ class LoginController extends Controller
         {
             //probably a login attempt!
 
-            $email = $_POST['email'];
-            $passwort = $_POST['pwd'];
+            $username = $_POST['email_login'];
+            $password = $_POST['pwd_login'];
 
-            if($email != "" && $passwort != "")
+            if($username != "" && $password != "")
             {
-                if($this->user->login($email, $passwort))
+                if($this->user->login($username, $password))
                 {
                     $this->user->redirectToIndex();
+
                 }
                 else
                 {

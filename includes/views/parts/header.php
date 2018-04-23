@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
         <!-- Änderung des angezeigten Tab-Titels je nach Seite -->
-        <?php if($this->current == "index"): ?><title>Über uns</title><?php endif; ?>
-        <?php if($this->current == "tiere"): ?><title>Tiere</title><?php endif; ?>
-        <?php if($this->current == "hilf_uns"): ?><title>Hilf Uns!</title><?php endif; ?>
-        <?php if($this->current == "kontakt"): ?><title>Kontakt</title><?php endif; ?>
-        <?php if($this->current == "login"): ?><title>Login</title><?php endif; ?>
-        <?php if($this->current == "register"): ?><title>Registrieren</title><?php endif; ?>
+    <title><?php echo $this->title; ?></title>
     <!-- Bootstrap Ressourcen -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
@@ -43,19 +38,19 @@
                 <li <?php if($this->current == "hilf_uns"): ?>class="active"<?php endif; ?>><a href="tiere">Hilf uns!</a></li>
                 <li <?php if($this->current == "kontakt"): ?>class="active"<?php endif; ?>><a href="tiere">Kontakt</a></li>
             </ul>
+
+
             <form class="navbar-form navbar-right">
+                <?php if(LOGGED_IN == true): ?>
                 <!-- Bei bestehender Session Login/Registrieren ausblenden und Logout einblenden und andersherum -->
-                <a href="register"><button type="button" class="btn btn-default btn-sm
-                    <?php if($_SESSION == true): ?> hidden<?php endif;?>">
-                Registrieren</button></a>
+                <a href="logout"><button type="button" class="btn btn-danger btn-sm">Logout</button></a>
 
-                <a href="login"><button type="button" class="btn btn-success btn-sm
-                    <?php if($_SESSION == true): ?> hidden<?php endif;?>">
-                Login</button></a>
+                <?php else: ?>
+                <a href="register"><button type="button" class="btn btn-default btn-sm">Registrieren</button></a>
 
-                <a href="logout"><button type="button" class="btn btn-danger btn-sm
-                    <?php if(!$_SESSION): ?> hidden<?php endif;?>">
-                Logout</button></a>
+                <a href="login"><button type="button" class="btn btn-success btn-sm">Login</button></a>
+
+                <?php endif; ?>
             </form>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

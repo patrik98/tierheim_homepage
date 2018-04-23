@@ -48,10 +48,14 @@ class SignUpController extends Controller
                 {
                     $error = true;
                     $errorFields['pwd'] = "Passwort ist zu kurz! Bitte mindestens 8 Zeichen eingeben";
+
+                    $this->view->PasswordTooShort = true;
                 } else if ($password != $_POST['pwd2']) //check if password matches password repetition
                 {
                     $error = true;
                     $errorFields['pwd2'] = "Passwort Wiederholung entspricht nicht dem gleichen Wert von Passwort!";
+
+                    $this->view->PasswordMismatch = true;
                 }
 
                 if (!$error) {

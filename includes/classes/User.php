@@ -85,7 +85,7 @@ class User extends Database
 
     public function login($username, $password)
     {
-        $sql = "SELECT `id`,`password` FROM `user` WHERE `name`='" . $this->escapeString($username) . "'";
+        $sql = "SELECT `nutzerid`,`passwort` FROM `nutzer` WHERE `email`='" . $this->escapeString($username) . "'";
         $result = $this->query($sql);
 
 
@@ -114,7 +114,7 @@ class User extends Database
     public static function getById($id)
     {
         $id = intval($id);
-        $sql = "SELECT * FROM `user` WHERE `id`=".$id;
+        $sql = "SELECT * FROM `nutzer` WHERE `nutzerid`=".$id;
 
         $db = new Database();
         $result = $db->query($sql);
@@ -125,7 +125,7 @@ class User extends Database
             $data = $db->fetchObject($result);
             $user = new User();
 
-            $user->username = $data['username'];
+            $user->username = $data['email'];
             $user->id = $id;
 
             return $user;
@@ -141,7 +141,7 @@ class User extends Database
         $this->isLoggedIn = false;
         $this->shipIt();
 
-        //$this->redirectToLogin();
+        //$this->redirectToIndex();
 
         return true;
     }

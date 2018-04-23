@@ -26,14 +26,14 @@ echo $this->header;
                 <div class="form-group">
                     <label class="col-xs-12 col-md-2" for="email">E-Mail:</label>
                     <div class="col-xs-12 col-md-10">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail eingeben">
+                        <input type="email" class="form-control" id="email_login" name="email_login" placeholder="E-Mail eingeben">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-xs-12 col-md-2" for="pwd">Passwort:</label>
                     <div class="col-xs-12 col-md-10">
-                        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Passwort eingeben">
+                        <input type="password" class="form-control" id="pwd_login" name="pwd_login" placeholder="Passwort eingeben">
                     </div>
                 </div>
 
