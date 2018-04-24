@@ -1,5 +1,5 @@
 
-var notEmptyFields = ['#pwd', '#pwd2'];
+var notEmptyFields = ['#email','#pwd','#pwd2','#vname','#nname','#gebdat'];
 
 
 for(var selector of notEmptyFields) {

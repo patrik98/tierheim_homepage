@@ -31,27 +31,7 @@ echo $this->header;
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4>Diese E-Mail-Adresse wird bereits verwendet!</h4>
-                <p>Bitte verwenden Sie eine noch nicht registrierte E-Mail-Adresse.</p>
-            </div>
-
-        <?php elseif ($this->PasswordTooShort): true?>
-
-            <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4>Das Passwort ist zu kurz!</h4>
-                <p>Die Mindestlänge beträgt 8 Zeichen.</p>
-            </div>
-
-        <?php elseif ($this->PasswordMismatch): true?>
-
-            <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4>Die Passwörter stimmen nicht überein!</h4>
-                <p>Bitte prüfen Sie Ihre Eingaben.</p>
+                <p>Bitte verwenden Sie eine andere E-Mail-Adresse.</p>
             </div>
 
         <?php endif; ?>
