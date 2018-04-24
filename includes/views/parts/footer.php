@@ -79,5 +79,9 @@
     <!--/.footer-bottom-->
 </footer>
 
+<?php if($this->current == 'register'): ?>
+<script type="text/javascript" src="js/register.js"></script>
+<?php endif; ?>
+
 </body>
 </html>

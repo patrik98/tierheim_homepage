@@ -1,6 +1,5 @@
 <?php
 
-session_destroy();
 echo $this->header;
 
 

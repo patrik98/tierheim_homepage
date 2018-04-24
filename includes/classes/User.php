@@ -45,14 +45,17 @@ class User extends Database
      * Checks if the User is logged in - if not redirect him to the login page
      * @return bool
      */
-    public function authenticate()
+    public function authenticate($redirect = true)
     {
         //checks if the user is logged in - if not - redirect to login!
         if(!$this->isLoggedIn)
         {
             define('LOGGED_IN', false);
 
-            $this->redirectToLogin();
+            if($redirect)
+            {
+                $this->redirectToIndex();
+            }
 
             //return false;
         }
@@ -88,7 +91,6 @@ class User extends Database
         $sql = "SELECT `nutzerid`,`passwort` FROM `nutzer` WHERE `email`='" . $this->escapeString($username) . "'";
         $result = $this->query($sql);
 
-
         if($this->numRows($result) == 0)
         {
             $this->isLoggedIn = false;
@@ -98,10 +100,10 @@ class User extends Database
         //now lets check for the password
         $row = $this->fetchObject($result);
 
-        if(password_verify($password, $row->password))
+        if(password_verify($password, $row->passwort))
         {
             $this->username = $username;
-            $this->id = $row->id;
+            $this->id = $row-id;
             $this->isLoggedIn = true;
 
             return true;

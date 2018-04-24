@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
 <div><img src="images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -36,14 +37,25 @@
                 <li <?php if($this->current == "index"): ?>class="active"<?php endif; ?>><a href="index">Über uns</a></li>
                 <li <?php if($this->current == "tiere"): ?>class="active"<?php endif; ?>><a href="tiere">Tiere</a></li>
                 <li <?php if($this->current == "hilf_uns"): ?>class="active"<?php endif; ?>><a href="tiere">Hilf uns!</a></li>
-                <li <?php if($this->current == "kontakt"): ?>class="active"<?php endif; ?>><a href="tiere">Kontakt</a></li>
+                <li <?php if($this->current == "kontakt"): ?>class="active"<?php endif; ?>><a href="kontakt">Kontakt</a></li>
             </ul>
 
 
             <form class="navbar-form navbar-right">
-                <?php if(LOGGED_IN == true): ?>
+                <?php if(LOGGED_IN == true):?>
+
                 <!-- Bei bestehender Session Login/Registrieren ausblenden und Logout einblenden und andersherum -->
-                <a href="logout"><button type="button" class="btn btn-danger btn-sm">Logout</button></a>
+
+                 <label>Angemeldet als: </label>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="glyphicon glyphicon-user"></i>  <?php echo $this->username?> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="logout"> <i class="glyphicon glyphicon-off"></i>  Logout</a></li>
+                        </ul>
+                    </div>
 
                 <?php else: ?>
                 <a href="register"><button type="button" class="btn btn-default btn-sm">Registrieren</button></a>

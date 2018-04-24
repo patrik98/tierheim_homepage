@@ -13,14 +13,17 @@ $route['/tierprofil.html'] = array('controller' => 'TierprofilController', 'uniq
 
 $route['/login'] = array('controller' => 'LoginController', 'uniqueName' => 'login');
 $route['/login.html'] = array('controller' => 'LoginController', 'uniqueName' => 'login');
+$route['/anmelden'] = array('controller' => 'LoginController', 'uniqueName' => 'login');
 
 $route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 $route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 
 $route['/register'] = array('controller' => 'SignUpController', 'uniqueName' => 'register');
 $route['/register.html'] = array('controller' => 'SignUpController', 'uniqueName' => 'register');
-$route['/register.php'] = array('controller' => 'SignUpController', 'uniqueName' => 'register');
 $route['/registrieren'] = array('controller' => 'SignUpController', 'uniqueName' => 'register');
+
+$route['/kontakt'] = array('controller' => 'KontaktController', 'uniqueName' => 'kontakt');
+$route['/kontakt.html'] = array('controller' => 'KontaktController', 'uniqueName' => 'kontakt');
 
 ?>
 

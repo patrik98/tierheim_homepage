@@ -30,6 +30,8 @@ class LoginController extends Controller
             $username = $_POST['email_login'];
             $password = $_POST['pwd_login'];
 
+
+
             if($username != "" && $password != "")
             {
                 if($this->user->login($username, $password))

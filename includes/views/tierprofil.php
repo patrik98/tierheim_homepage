@@ -41,8 +41,7 @@ echo $this->header;
                         </h4>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">Panel Body</div>
-                        <div class="panel-footer">Panel Footer</div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -58,8 +57,7 @@ echo $this->header;
                         </h4>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">Panel Body</div>
-                        <div class="panel-footer">Panel Footer</div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -75,8 +73,7 @@ echo $this->header;
                         </h4>
                     </div>
                     <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">Panel Body</div>
-                        <div class="panel-footer">Panel Footer</div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -95,8 +92,7 @@ echo $this->header;
                         </h4>
                     </div>
                     <div id="collapse4" class="panel-collapse collapse">
-                        <div class="panel-body">Panel Body</div>
-                        <div class="panel-footer">Panel Footer</div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -112,8 +108,7 @@ echo $this->header;
                         </h4>
                     </div>
                     <div id="collapse5" class="panel-collapse collapse">
-                        <div class="panel-body">Panel Body</div>
-                        <div class="panel-footer">Panel Footer</div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -129,8 +124,7 @@ echo $this->header;
                         </h4>
                     </div>
                     <div id="collapse6" class="panel-collapse collapse">
-                        <div class="panel-body">Panel Body</div>
-                        <div class="panel-footer">Panel Footer</div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@ abstract class Controller
 		$this->output();
 	}
 
-	private function output()
+	protected function output()
 	{
 		$this->view->output();
 	}
