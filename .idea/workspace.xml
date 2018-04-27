@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="211660ed-91e0-4756-89d0-95d4e464859e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/includes/views/parts/header.php" afterPath="$PROJECT_DIR$/includes/views/parts/header.php" />
+=======
+      <change beforePath="$PROJECT_DIR$/databasedump/tierheim.sql.zip" afterPath="$PROJECT_DIR$/databasedump/tierheim.sql.zip" />
+      <change beforePath="$PROJECT_DIR$/includes/controllers/SignUpController.php" afterPath="$PROJECT_DIR$/includes/controllers/SignUpController.php" />
+      <change beforePath="$PROJECT_DIR$/includes/views/parts/footer.php" afterPath="$PROJECT_DIR$/includes/views/parts/footer.php" />
+      <change beforePath="$PROJECT_DIR$/includes/views/parts/header.php" afterPath="$PROJECT_DIR$/includes/views/parts/header.php" />
+      <change beforePath="$PROJECT_DIR$/includes/views/register.php" afterPath="$PROJECT_DIR$/includes/views/register.php" />
+      <change beforePath="$PROJECT_DIR$/includes/views/tiere.php" afterPath="$PROJECT_DIR$/includes/views/tiere.php" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
       <change beforePath="$PROJECT_DIR$/js/register.js" afterPath="$PROJECT_DIR$/js/register.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TierprofilController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/controllers/TierprofilController.php">
@@ -86,6 +96,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,26 +157,40 @@
         <option value="$PROJECT_DIR$/js/login.js" />
         <option value="$PROJECT_DIR$/js/core.js" />
         <option value="$PROJECT_DIR$/includes/dbconfig.php" />
-        <option value="$PROJECT_DIR$/includes/controllers/SignUpController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/LogoutController.php" />
         <option value="$PROJECT_DIR$/includes/views/login.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/includes/views/register.php" />
         <option value="$PROJECT_DIR$/includes/views/parts/footer.php" />
+=======
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
         <option value="$PROJECT_DIR$/includes/controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/includes/classes/Controller.php" />
         <option value="$PROJECT_DIR$/includes/classes/User.php" />
         <option value="$PROJECT_DIR$/includes/views/tierprofil.php" />
         <option value="$PROJECT_DIR$/includes/routes.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/includes/views/kontakt.php" />
+=======
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
         <option value="$PROJECT_DIR$/includes/views/logout.php" />
         <option value="$PROJECT_DIR$/includes/models/TierModel.php" />
-        <option value="$PROJECT_DIR$/includes/views/tiere.php" />
         <option value="$PROJECT_DIR$/includes/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/TiereController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/KontaktController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/TierprofilController.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/js/register.js" />
         <option value="$PROJECT_DIR$/includes/views/parts/header.php" />
+=======
+        <option value="$PROJECT_DIR$/includes/views/kontakt.php" />
+        <option value="$PROJECT_DIR$/includes/views/parts/header.php" />
+        <option value="$PROJECT_DIR$/includes/views/parts/footer.php" />
+        <option value="$PROJECT_DIR$/includes/views/register.php" />
+        <option value="$PROJECT_DIR$/includes/controllers/SignUpController.php" />
+        <option value="$PROJECT_DIR$/js/register.js" />
+        <option value="$PROJECT_DIR$/includes/views/tiere.php" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
       </list>
     </option>
   </component>
@@ -174,10 +201,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="395" />
-    <option name="y" value="1" />
-    <option name="width" value="1435" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="402" />
+    <option name="y" value="3" />
+    <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
@@ -195,9 +222,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,6 +248,7 @@
             </path>
             <path>
               <item name="tierheim_homepage" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
               <item name="tierheim_homepage" type="462c0819:PsiDirectoryNode" />
               <item name="includes" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
@@ -244,12 +275,22 @@
               <item name="tierheim_homepage" type="b2602c69:ProjectViewProjectNode" />
               <item name="tierheim_homepage" type="462c0819:PsiDirectoryNode" />
               <item name="original" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="tierheim_homepage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,19 +381,31 @@
       <workItem from="1524474531091" duration="233000" />
       <workItem from="1524488695768" duration="1345000" />
       <workItem from="1524552465900" duration="12497000" />
+<<<<<<< HEAD
       <workItem from="1524566927994" duration="121000" />
       <workItem from="1524567088599" duration="3552000" />
       <workItem from="1524577705842" duration="232000" />
+=======
+      <workItem from="1524569764146" duration="6356000" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="66619000" />
+=======
+    <option name="totallyTimeSpent" value="69070000" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -561,6 +614,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/controllers/SignUpController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
@@ -582,10 +636,22 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
     <entry file="file://$PROJECT_DIR$/includes/views/address.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
         </state>
       </provider>
     </entry>
@@ -607,6 +673,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-284">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/LogoutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
         </state>
       </provider>
     </entry>
@@ -614,6 +690,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="145" column="10" lean-forward="false" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="10" />
+<<<<<<< HEAD
+=======
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/tierprofil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="126" column="76" lean-forward="false" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
         </state>
       </provider>
     </entry>
@@ -652,7 +746,10 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/views/kontakt.php" />
+=======
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
     <entry file="file://$PROJECT_DIR$/includes/models/TierModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -667,6 +764,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -686,10 +784,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+=======
+    <entry file="file://$PROJECT_DIR$/includes/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/KontaktController.php" />
+    <entry file="file://$PROJECT_DIR$/includes/controllers/TierprofilController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/models/AktivitatModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -701,54 +814,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="44" column="3" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+=======
+    <entry file="file://$PROJECT_DIR$/includes/views/kontakt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/views/parts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/TierprofilController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="840">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+=======
+        <state relative-caret-position="153">
+          <caret line="9" column="57" lean-forward="false" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/views/tierprofil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2646">
           <caret line="126" column="76" lean-forward="false" selection-start-line="126" selection-start-column="76" selection-end-line="126" selection-end-column="76" />
+=======
+    <entry file="file://$PROJECT_DIR$/includes/views/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/views/tiere.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="882">
           <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+=======
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/controllers/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/includes/controllers/SignUpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="60" column="218" lean-forward="false" selection-start-line="60" selection-start-column="218" selection-end-line="60" selection-end-column="218" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+=======
+    <entry file="file://$PROJECT_DIR$/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/views/parts/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="17" column="115" lean-forward="false" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
+=======
+    <entry file="file://$PROJECT_DIR$/includes/views/tiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="53" column="10" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+>>>>>>> b4627b71cca93ec4bf9ce324dcbc6a647f407ea8
           <folding />
         </state>
       </provider>

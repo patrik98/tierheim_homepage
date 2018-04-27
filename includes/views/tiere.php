@@ -14,17 +14,18 @@ echo $this->header;
 <div class="container-fluid"> <!-- umfassender Container -->
 
     <div class = "row">
+
     <?php foreach($this->tiere as $tier):
 
         $gebdat = new DateTime($tier->gebdat);
 
         ?>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 
             <!-- Profil 1 -->
             <div class="well well-sm">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         <?php if($tier->bildlink != ''):?>
                             <img src="<?php echo $tier->bildlink; ?>" alt="<?php echo $tier->name; ?>" class="img-rounded img-responsive" />
                         <?php else: ?>
@@ -35,25 +36,22 @@ echo $this->header;
                         <h4>
                             <?php echo $tier->name; ?></h4>
 
-                        <p><i class="glyphicon glyphicon-gift"></i> <?php echo $gebdat->format('d.m.Y'); ?></p>
-                        <p><i class ="glyphicon glyphicon-info-sign"></i> <?php echo $tier->gbezeichnung; ?></p>
-                        <p><i class="glyphicon glyphicon-tag"></i> <?php echo $tier->rasse ?></p>
+                        <p><i class="fas fa-calendar-alt"></i> geboren am: <?php echo $gebdat->format('d.m.Y'); ?></p>
+                        <p><?php if($tier->gbezeichnung=='männlich'):?><i class ="fas fa-mars"></i><?php else:?><i class ="fas fa-venus"></i><?php endif;?> <?php echo $tier->gbezeichnung; ?></p>
+                        <p><i class="fas fa-info-circle"></i> <?php echo $tier->rasse ?></p>
 
                             <!-- Split button -->
                         <div class="btn-group">
                             <a href="tierprofil?id=<?php echo $tier->tierid; ?>" class="btn btn-primary">
-                                Profil anzeigen</a>
+                                <?php echo $tier->name; ?>s Profil anzeigen
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     <?php endforeach; ?>
-
-
     </div>
-
-
 </div>
 
 <?php
