@@ -11,12 +11,11 @@
 
     <!-- Selbsterstellte Ressourcen -->
     <link rel="stylesheet" href="css/main.css"/>
-
 </head>
 
 <body>
 
-<div><img src="images/600x200.jpg" style="width: 100%; height: 100px;"/></div>
+<div><img src="images/600x200.jpg" style="width: 100%; height: 200px"/></div>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
