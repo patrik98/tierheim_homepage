@@ -1,6 +1,6 @@
 <?php
 
-class TierModel
+class NewsModel
 {
 	public static function getNewsById($newsid)
 	{
@@ -21,7 +21,7 @@ class TierModel
     {
         $db = new Database();
 
-        $sql = "SELECT newsid, ueberschrift, inhalt, datum AS newsid, ueberschrift, inhalt, datum FROM news";
+        $sql = "SELECT newsid, ueberschrift, inhalt, datum FROM news";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
@@ -39,7 +39,7 @@ class TierModel
         return null;
     }
 
-	public static function createNews($data)
+	/*public static function createNews($data)
 	{
 		$db = new Database();
 
@@ -67,5 +67,5 @@ class TierModel
 
 		$sql = "DELETE FROM news WHERE id=".intval($newsid);
 		$db->query($sql);
-	}
+	}*/
 }

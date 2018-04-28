@@ -17,33 +17,33 @@ class TierModel
 		return null;
 	}
 
-	public static function getAlleTiereByUserId($tierId)
-	{
-		$db = new Database();
-
-		$sql = "SELECT * FROM address WHERE userId=".intval($tierId);
-		$result = $db->query($sql);
-
-		if($db->numRows($result) > 0)
-		{
-			$tiereArray = array();
-
-			while($row = $db->fetchObject($result))
-			{
-				$tiereArray[] = $row;
-			}
-
-			return $tiereArray;
-		}
-
-		return null;
-	}
-
     public static function getAlleTiere()
     {
         $db = new Database();
 
         $sql = "SELECT t.tierid, t.name, t.gebdat, ta.bezeichnung AS 'rasse', g.bezeichnung AS 'gbezeichnung', t.bildlink FROM tier t JOIN tierart ta ON t.tierart=ta.tierartid JOIN geschlecht g ON t.geschlecht = g.gid";
+        $result = $db->query($sql);
+
+        if($db->numRows($result) > 0)
+        {
+            $tiereArray = array();
+
+            while($row = $db->fetchObject($result))
+            {
+                $tiereArray[] = $row;
+            }
+
+            return $tiereArray;
+        }
+
+        return null;
+    }
+
+   /* public static function getAlleTiereByUserId($tierId)
+    {
+        $db = new Database();
+
+        $sql = "SELECT * FROM address WHERE userId=".intval($tierId);
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
@@ -89,5 +89,5 @@ class TierModel
 
 		$sql = "DELETE FROM tier WHERE id=".intval($tierid);
 		$db->query($sql);
-	}
+	} */
 }
