@@ -22,9 +22,14 @@
 <body>
 
 <header>
+    <?php if(LOGGED_IN == false):?>
     <a href="login"><button type="button" class="btn btn-default btn-sm" id="turquoise">Login</button></a>
     <a href="register"><button type="button" class="btn btn-default btn-sm" id="white">Registrieren</button></a>
-    <img src="images/header.png" class="inner"/>
+        <img src="images/header.png" class="inner"/>
+    <?php else: ?>
+        <img src="images/header.png" class="inner"/>
+
+    <?php endif; ?>
 </header>
 
 
@@ -43,19 +48,28 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-center">
+            <ul class="nav navbar-nav">
                 <!-- Setzen der "active"-Klasse je nach aktueller Seite -->
                 <li <?php if($this->current == "index"): ?>class="active"<?php endif; ?>><a href="index">Ueber uns</a></li>
                 <li <?php if($this->current == "tiere"): ?>class="active"<?php endif; ?>><a href="tiere">Tiere</a></li>
                 <li <?php if($this->current == "hilf_uns"): ?>class="active"<?php endif; ?>><a href="tiere">Hilf uns!</a></li>
                 <li <?php if($this->current == "kontakt"): ?>class="active"<?php endif; ?>><a href="kontakt">Kontakt</a></li>
             </ul>
+            <?php if(LOGGED_IN == true):?>
+            <ul class="nav navbar-nav navbar-right">
+                <li><?php echo $this->username?></li>
+                <li><a href="logout"> <i class="glyphicon glyphicon-off"></i> Logout</a></li>
+            </ul>
+            <?php else: ?>
 
 
-            <form class="navbar-form navbar-right">
-                <?php if(LOGGED_IN == true):?>
+            <?php endif; ?>
 
-                <!-- Bei bestehender Session Login/Registrieren aus- und Logout einblenden und andersherum -->
+
+
+
+
+                <!-- Bei bestehender Session Login/Registrieren aus- und Logout einblenden und andersherum
 
                  <label>Angemeldet als: </label>
 
@@ -66,13 +80,9 @@
                         <ul class="dropdown-menu">
                             <li><a href="logout"> <i class="glyphicon glyphicon-off"></i>  Logout</a></li>
                         </ul>
-                    </div>
-
-                <?php else: ?>
+                    </div> -->
 
 
-                <?php endif; ?>
-            </form>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

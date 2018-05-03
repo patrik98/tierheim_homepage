@@ -2,13 +2,6 @@
     @media (min-width: $breakpoint) { @content; }
 }
 
-@media (min-width: 768px) {
-    .navbar-nav.navbar-center {
-        position: absolute;
-        left: 50%;
-        transform: translatex(-70%);
-    }
-}
 
 @font-face {
     font-family: 'BebasNeue';
@@ -30,11 +23,7 @@ $main-color         : #f2f2f2;
 
 #main {
     margin:0 auto;
-    width: 90%;
 
-    @include breakpoint($desktop) {
-        width: $desktop;
-    }
 }
 
 
@@ -55,11 +44,24 @@ $main-color         : #f2f2f2;
     color: $black;
 
     .navbar-nav {
-
+        width: 100%;
+        text-align: center;
+        > li {
+            float: none;
+            display: inline-block;
+        }
+        .navbar-right {
+            float: right; 
+        }
     }
 
     .navbar-default {
-
+        width: 100%;
+        text-align: center;
+        > li {
+            float: none;
+            display: inline-block;
+        }
     }
 }
 
@@ -71,9 +73,6 @@ header {
         width: 100%;
         display: block;
 
-        @include breakpoint($desktop) {
-            width: $desktop;
-        }
     }
 
     .btn {

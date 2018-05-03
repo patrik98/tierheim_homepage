@@ -3,8 +3,8 @@
 echo $this->header;
 
 ?>
-<main>
-    <div id="main">
+
+    <div class="container-fluid">
         <div class="row">
             <h1 class="col-xs-12">Login</h1>
 
@@ -48,7 +48,7 @@ echo $this->header;
             </form>
         </div>
     </div>
-</main>
+
 <?php
 
 echo $this->footer;

@@ -4,7 +4,7 @@ echo $this->header;
 
 ?>
 <main>
-<div id="main">
+<div class="container-fluid">
 
 <?php if($this->UserRegistered): ?>
     <p class="alert alert-success">
