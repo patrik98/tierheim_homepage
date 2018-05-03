@@ -7,7 +7,7 @@
  */
 echo $this->header;
 ?>
-
+<main>
 <div class="container">
     <div class="row-fluid">
         <div class="span8">
@@ -28,7 +28,7 @@ echo $this->header;
         </div>
     </div>
 </div>
-
+</main>
 <?php
 
 echo $this->footer;

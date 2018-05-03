@@ -7,7 +7,7 @@
  */
 echo $this->header;
 ?>
-
+<main>
 <div class="container-fluid">
 
     <!-- Thumbnails & Links zu den Tierprofilen -->
@@ -131,6 +131,7 @@ echo $this->header;
         </div>
     </div>
 </div>
+</main>
 
 <?php
 

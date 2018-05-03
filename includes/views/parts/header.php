@@ -15,12 +15,21 @@
 
     <!-- Selbsterstelltes CSS -->
     <link rel="stylesheet" href="css/main.css"/>
+
+
 </head>
 
 <body>
 
-<div><img src="images/600x200.jpg" style="width: 100%; height: 200px"/></div>
-<nav class="navbar navbar-default">
+<header>
+    <a href="login"><button type="button" class="btn btn-default btn-sm" id="turquoise">Login</button></a>
+    <a href="register"><button type="button" class="btn btn-default btn-sm" id="white">Registrieren</button></a>
+    <img src="images/header.png" class="inner"/>
+</header>
+
+
+
+<nav class="navbar navbar-default" id="main">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -30,14 +39,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index">Tierheim</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-center">
                 <!-- Setzen der "active"-Klasse je nach aktueller Seite -->
-                <li <?php if($this->current == "index"): ?>class="active"<?php endif; ?>><a href="index">Über uns</a></li>
+                <li <?php if($this->current == "index"): ?>class="active"<?php endif; ?>><a href="index">Ueber uns</a></li>
                 <li <?php if($this->current == "tiere"): ?>class="active"<?php endif; ?>><a href="tiere">Tiere</a></li>
                 <li <?php if($this->current == "hilf_uns"): ?>class="active"<?php endif; ?>><a href="tiere">Hilf uns!</a></li>
                 <li <?php if($this->current == "kontakt"): ?>class="active"<?php endif; ?>><a href="kontakt">Kontakt</a></li>
@@ -61,9 +69,7 @@
                     </div>
 
                 <?php else: ?>
-                <a href="register"><button type="button" class="btn btn-default btn-sm">Registrieren</button></a>
 
-                <a href="login"><button type="button" class="btn btn-success btn-sm">Login</button></a>
 
                 <?php endif; ?>
             </form>

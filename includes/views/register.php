@@ -3,7 +3,7 @@
 echo $this->header;
 
 ?>
-
+<main>
 <div id="main">
 
 <?php if($this->UserRegistered): ?>
@@ -123,7 +123,7 @@ echo $this->header;
 <?php endif; ?>
 
 </div>
-
+</main>
 <?php
 
 echo $this->footer;

@@ -1,6 +1,7 @@
 <?php echo $this->header; ?>
 
 <!-- Container -->
+<main>
 <div class="container-fluid">
 
     <!-- Button zum Erstellen von News -->
@@ -39,5 +40,5 @@
         <hr/>
     <?php endforeach; ?>
 </div>
-
+</main>
 <?php echo $this->footer; ?>

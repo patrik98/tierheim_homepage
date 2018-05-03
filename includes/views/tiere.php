@@ -9,7 +9,7 @@
 echo $this->header;
 
 ?>
-
+<main>
 <!-- Profilliste -->
 <div class="container-fluid"> <!-- umfassender Container -->
 
@@ -53,7 +53,7 @@ echo $this->header;
     <?php endforeach; ?>
     </div>
 </div>
-
+</main>
 <?php
 
 echo $this->footer;
