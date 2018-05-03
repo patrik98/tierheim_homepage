@@ -27,6 +27,7 @@
     <a href="register"><button type="button" class="btn btn-default btn-sm" id="white">Registrieren</button></a>
         <img src="images/header.png" class="inner"/>
     <?php else: ?>
+        <a href="logout"><button type="button" class="btn btn-default btn-sm" id="turquoise">Logout</button></a>
         <img src="images/header.png" class="inner"/>
 
     <?php endif; ?>
@@ -55,33 +56,6 @@
                 <li <?php if($this->current == "hilf_uns"): ?>class="active"<?php endif; ?>><a href="tiere">Hilf uns!</a></li>
                 <li <?php if($this->current == "kontakt"): ?>class="active"<?php endif; ?>><a href="kontakt">Kontakt</a></li>
             </ul>
-            <?php if(LOGGED_IN == true):?>
-            <ul class="nav navbar-nav navbar-right">
-                <li><?php echo $this->username?></li>
-                <li><a href="logout"> <i class="glyphicon glyphicon-off"></i> Logout</a></li>
-            </ul>
-            <?php else: ?>
-
-
-            <?php endif; ?>
-
-
-
-
-
-                <!-- Bei bestehender Session Login/Registrieren aus- und Logout einblenden und andersherum
-
-                 <label>Angemeldet als: </label>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="glyphicon glyphicon-user"></i>  <?php echo $this->username?> <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="logout"> <i class="glyphicon glyphicon-off"></i>  Logout</a></li>
-                        </ul>
-                    </div> -->
-
 
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

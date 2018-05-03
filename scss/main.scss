@@ -23,9 +23,7 @@ $main-color         : #f2f2f2;
 
 #main {
     margin:0 auto;
-
 }
-
 
 #white {
     color: $white;
@@ -51,7 +49,7 @@ $main-color         : #f2f2f2;
             display: inline-block;
         }
         .navbar-right {
-            float: right; 
+            float: right;
         }
     }
 
@@ -63,6 +61,14 @@ $main-color         : #f2f2f2;
             display: inline-block;
         }
     }
+}
+
+.container-fluid{
+        background-color: $main-color;
+}
+
+.active {
+    background-color: $main-color;
 }
 
 header {
