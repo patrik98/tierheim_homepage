@@ -6,9 +6,13 @@ echo $this->header;
 <div class="container-fluid">
 
 <?php if($this->UserRegistered): ?>
-    <p class="alert alert-success">
+<div class="col-xs-0 col-md-1 col-lg-2"></div>
+    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
+    <h4 class="alert alert-success">
         Der Benutzer wurde erfolgreich registiert. Sie können sich nun <a href="login">hier einloggen</a>.
-    </p>
+    </h4>
+    </div>
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
 
 
 <?php else: ?>
@@ -24,11 +28,8 @@ echo $this->header;
 </div>
 
     <div class="row">
-
-        <p class="col-xs-12 col-md-10">
-            Sie haben sich bereits registriert? Dann können Sie sich <a href="login">hier einloggen</a>.
-        </p>
-    </div>
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+    <div class="col-xs-0 col-md-10 col-lg-8">
 
     <form method = "post" class="form-horizontal" id="registerForm" action="register">
 
@@ -63,10 +64,6 @@ echo $this->header;
             <div class="col-xs-12 col-md-10">
                 <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Passwort wiederholen" maxlength="255" required>
             </div>
-        </div>
-
-        <div class="row">
-            <h3 class="col-xs-12">Persönliche Daten</h3>
         </div>
 
         <div class="form-group">
@@ -127,6 +124,9 @@ echo $this->header;
             <input type="hidden" name="action" value="register">
 
     </form>
+    </div>
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+    </div>
 
 <?php endif; ?>
 

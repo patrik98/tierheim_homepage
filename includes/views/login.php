@@ -16,11 +16,10 @@ echo $this->header;
 </div>
     
         <div class="row">
-            <p class="col-xs-12 col-md-10">
-                Sie besitzen noch keinen Account? Dann können Sie sich <a href="register">hier registrieren</a>.
-            </p>
+        <div class="col-xs-0 col-md-1 col-lg-2"></div>
+        <div class="col-xs-12 col-md-10 col-lg-8">
 
-           <form method = "post" class="form-horizontal col-xs-12" action="login">
+           <form method = "post" class="form-horizontal" action="login">
 
                <?php if($this->errorPasswd == true): ?>
                    <div class="alert alert-danger alert-dismissible fade in" role="alert">
@@ -54,6 +53,8 @@ echo $this->header;
                     <input type="hidden" name="action" value="login">
                 </div>
             </form>
+            </div>
+            <div class="col-xs-0 col-md-1 col-lg-2"></div>
         </div>
     </div>
 
