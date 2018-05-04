@@ -1,15 +1,21 @@
-<?php echo $this->header; ?>
+<?php
 
-<div class="container-fluid">
+echo $this->header;
 
-<!-- Reihe für immer zentrierte Überschrift -->
-<div class="row">
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
-    <h1 class="col-xs-12">Logout erfolgreich</h1>
-        <p class="col-xs-12">Sie sind jetzt abgemeldet. <a href="login">Klicken Sie hier um sich wieder anzumelden.</a></p>
+
+?>
+
+
+    <div id="main">
+        <div class="row">
+            <h1 class="col-xs-12">Logout erfolgreich</h1>
+            <p class="col-xs-12">Sie sind jetzt abgemeldet. <a href="login">Klicken Sie hier um sich wieder anzumelden.</a></p>
+        </div>
     </div>
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-</div>
 
-<?php echo $this->footer; ?>
+
+<?php
+
+echo $this->footer;
+
+?>

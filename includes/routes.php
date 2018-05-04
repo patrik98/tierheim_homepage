@@ -25,11 +25,5 @@ $route['/registrieren'] = array('controller' => 'SignUpController', 'uniqueName'
 $route['/kontakt'] = array('controller' => 'KontaktController', 'uniqueName' => 'kontakt');
 $route['/kontakt.html'] = array('controller' => 'KontaktController', 'uniqueName' => 'kontakt');
 
-$route['/createNews'] = array('controller' => 'NewsController', 'uniqueName' => 'createNews');
-$route['/createNews.html'] = array('controller' => 'NewsController', 'uniqueName' => 'createNews');
-
-$route['/hilf_uns'] = array('controller' => 'HilfUnsController', 'uniqueName' => 'hilf_uns');
-$route['/hilf_uns.html'] = array('controller' => 'HilfUnsController', 'uniqueName' => 'hilf_uns');
-
 ?>
 

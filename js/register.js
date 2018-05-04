@@ -15,6 +15,7 @@ for(var selector of notEmptyFields) {
     });
 }
 
+
 //special case: pwd != pwd2
 
 var pwdElement = $('#pwd');
@@ -31,6 +32,7 @@ pwdElement.blur(function() {
         }
     }
 });
+
 
 pwdElement2.blur(function() {
     if(pwdElement2.val() != '') {

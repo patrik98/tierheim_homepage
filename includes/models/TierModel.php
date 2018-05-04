@@ -2,20 +2,39 @@
 
 class TierModel
 {
-	public static function getTierById($tierid)
-	{
-		$db = new Database();
-		$sql = "SELECT * FROM tier WHERE tierid=".intval($tierid);
+    public static function getTierById($tierid)
+    {
+        $db = new Database();
+        $sql = "SELECT * FROM tier WHERE tierid=" . intval($tierid);
 
-		$result = $db->query($sql);
+        $result = $db->query($sql);
 
-		if($db->numRows($result) > 0)
-		{
-			return $db->fetchObject($result);
-		}
+        if ($db->numRows($result) > 0) {
+            return $db->fetchObject($result);
+        }
 
-		return null;
-	}
+        return null;
+    }
+
+    public static function getAlleTiereByUserId($tierId)
+    {
+        $db = new Database();
+
+        $sql = "SELECT * FROM address WHERE userId=" . intval($tierId);
+        $result = $db->query($sql);
+
+        if ($db->numRows($result) > 0) {
+            $tiereArray = array();
+
+            while ($row = $db->fetchObject($result)) {
+                $tiereArray[] = $row;
+            }
+
+            return $tiereArray;
+        }
+
+        return null;
+    }
 
     public static function getAlleTiere()
     {
@@ -24,12 +43,10 @@ class TierModel
         $sql = "SELECT t.tierid, t.name, t.gebdat, ta.bezeichnung AS 'rasse', g.bezeichnung AS 'gbezeichnung', t.bildlink FROM tier t JOIN tierart ta ON t.tierart=ta.tierartid JOIN geschlecht g ON t.geschlecht = g.gid";
         $result = $db->query($sql);
 
-        if($db->numRows($result) > 0)
-        {
+        if ($db->numRows($result) > 0) {
             $tiereArray = array();
 
-            while($row = $db->fetchObject($result))
-            {
+            while ($row = $db->fetchObject($result)) {
                 $tiereArray[] = $row;
             }
 
@@ -39,55 +56,53 @@ class TierModel
         return null;
     }
 
-   /* public static function getAlleTiereByUserId($tierId)
+
+    public static function createTier($data)
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM address WHERE userId=".intval($tierId);
-        $result = $db->query($sql);
+        $sql = "INSERT INTO tier (tierid,name,gebdat,tierart) VALUES('" . $db->escapeString($data['tierid']) . "','" . $db->escapeString($data['name']) . "','" . $db->escapeString($data['gebdat']) . "','" . $db->escapeString($data['tierart']) . "')";
+        $db->query($sql);
 
-        if($db->numRows($result) > 0)
-        {
-            $tiereArray = array();
+        $data['tierid'] = $db->insertId();
 
-            while($row = $db->fetchObject($result))
-            {
-                $tiereArray[] = $row;
-            }
-
-            return $tiereArray;
-        }
-
-        return null;
+        return (object)$data;
     }
 
-	public static function createTier($data)
-	{
-		$db = new Database();
+    public static function saveTier($data)
+    {
+        $db = new Database();
 
-		$sql = "INSERT INTO tier (tierid,name,gebdat,tierart) VALUES('".$db->escapeString($data['tierid'])."','".$db->escapeString($data['name'])."','".$db->escapeString($data['gebdat'])."','".$db->escapeString($data['tierart'])."')";
-		$db->query($sql);
+        $sql = "UPDATE tier SET name='" . $db->escapeString($data['name']) . "',gebdat='" . $db->escapeString($data['gebdat']) . "',tierart='" . $db->escapeString($data['tierart']) . "' WHERE id=" . intval($data['tierid']);
+        $db->query($sql);
 
-		$data['tierid'] = $db->insertId();
+        return (object)$data;
+    }
 
-		return (object) $data;
-	}
+    public static function deleteTierById($tierid)
+    {
+        $db = new Database();
 
-	public static function saveTier($data)
-	{
-		$db = new Database();
+        $sql = "DELETE FROM tier WHERE id=" . intval($tierid);
+        $db->query($sql);
+    }
 
-		$sql = "UPDATE tier SET name='".$db->escapeString($data['name'])."',gebdat='".$db->escapeString($data['gebdat'])."',tierart='".$db->escapeString($data['tierart'])."' WHERE id=".intval($data['tierid']);
-		$db->query($sql);
 
-		return (object) $data;
-	}
+    public static function createActivity($activitydata)
+    {
+        $db = new Database();
 
-	public static function deleteTierById($tierid)
-	{
-		$db = new Database();
+        $sql = "INSERT INTO map_aktivitaet (bezeichnung,termin) VALUES ('" . $db->escapeString($activitydata['montagsaction']) . ",'" . $db->escapeString($activitydata['montagsuhrzeit']) . "')";
+        $db->query($sql);
+    }
 
-		$sql = "DELETE FROM tier WHERE id=".intval($tierid);
-		$db->query($sql);
-	} */
+
+    public static function getInfo($info)
+    {
+        $db = new Database();
+
+        $sql = "Select * from map_aktivitaet";
+        $db->query($sql);
+    }
+
 }

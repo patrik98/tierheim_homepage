@@ -3,33 +3,24 @@
 echo $this->header;
 
 ?>
-<div class="container-fluid">
+
+<div id="main">
 
 <?php if($this->UserRegistered): ?>
-<div class="col-xs-0 col-md-1 col-lg-2"></div>
-    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
-    <h4 class="alert alert-success">
+    <p class="alert alert-success">
         Der Benutzer wurde erfolgreich registiert. Sie können sich nun <a href="login">hier einloggen</a>.
-    </h4>
-    </div>
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+    </p>
 
 
 <?php else: ?>
 
-<!-- Reihe für immer zentrierte Überschrift -->
-<div class="row">
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
-        <h1>Registrieren</h1>
-        <hr/>
-    </div>
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-</div>
-
     <div class="row">
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-    <div class="col-xs-0 col-md-10 col-lg-8">
+        <h1 class="col-xs-12">Registrieren</h1>
+
+        <p class="col-xs-12 col-md-10">
+            Sie haben sich bereits registriert? Dann können Sie sich <a href="login">hier einloggen</a>.
+        </p>
+    </div>
 
     <form method = "post" class="form-horizontal" id="registerForm" action="register">
 
@@ -64,6 +55,10 @@ echo $this->header;
             <div class="col-xs-12 col-md-10">
                 <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Passwort wiederholen" maxlength="255" required>
             </div>
+        </div>
+
+        <div class="row">
+            <h3 class="col-xs-12">Persönliche Daten</h3>
         </div>
 
         <div class="form-group">
@@ -124,13 +119,11 @@ echo $this->header;
             <input type="hidden" name="action" value="register">
 
     </form>
-    </div>
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-    </div>
 
 <?php endif; ?>
 
 </div>
+
 <?php
 
 echo $this->footer;

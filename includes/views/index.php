@@ -1,51 +1,39 @@
-<?php echo $this->header; ?>
+<?php
 
-<!-- Container -->
-<div class="container-fluid">
+echo $this->header;
 
-<!-- Reihe für immer zentrierte Überschrift -->
-<div class="row">
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
-        <h1>Aktuelle Infos</h1>
-        <hr/>
-    </div>
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-</div>
-
-    <!-- Button zum Erstellen von News -->
-    <?php if($this->username == 'tierheim@admin'): ?>
-    <div class="row">
-        <div class="col-xs-12">
-            <button class="btn btn-default">News schreiben</button>
+?>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-4">
+                <div class="thumbnail">
+                    <img src="images/600x600.jpg" alt="" style="width:100%">
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-9 col-md-8">
+                <h1>Überschrift 1</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
         </div>
-    </div>
-    <?php endif?>
 
-    <!-- Schleife vgl. zu tiere.php mit row -->
-    <?php foreach($this->news as $news):
-
-        //News-Datum anlegen
-        $newsdat = new DateTime($news->datum);?>
+        <hr/>
 
         <div class="row">
-        <div class="col-xs-0 col-md-1 col-lg-2"></div>   
-            <div class="col-xs-12 col-md-10 col-lg-8">
-                <h1>
-                    <?php echo $news->ueberschrift; ?>
-                    <!-- Formatierung des Datum-Strings -->
-                    <small><?php echo $newsdat->format('d.m.Y'); ?></small>
-                </h1>
-                <p> <?php echo $news->inhalt; ?> </p>
-                
-                <!-- Möglichkeit zum Bearbeiten/Löschen je nach Nutzeraccount ein-/ausblenden -->
-                <?php if($this->username == 'tierheim@admin'): ?>
-                    <button class="btn btn-sm btn-warning">Bearbeiten</button>
-                    <button class="btn btn-sm btn-danger">Löschen</button>
-                <?php endif?>
+            <div class="col-sm-3 col-md-4">
+                <div class="thumbnail">
+                    <img src="images/600x600.jpg" alt="" style="width:100%">
+                </div>
             </div>
-            <div class="col-xs-0 col-md-1 col-lg-2"></div>
+            <div class="col-xs-8 col-sm-9 col-md-8">
+                <h1>Überschrift 1</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
         </div>
-    <?php endforeach; ?>
-</div>
-<?php echo $this->footer; ?>
+    </div>
+
+
+<?php
+
+echo $this->footer;
+
+?>

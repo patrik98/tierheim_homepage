@@ -1,120 +1,78 @@
-@charset "UTF-8";
-@font-face {
-  font-family: 'BebasNeue';
-  src: url("fonts/BEBAS.eot");
-  src: local("Ôÿ║"), url("fonts/BEBAS.woff") format("woff"), url("fonts/BEBAS.ttf") format("truetype"), url("fonts/BEBAS.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* line 24, ../scss/main.scss */
+/* line 11, ../scss/main.scss */
 #main {
   margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 990px) {
+  /* line 11, ../scss/main.scss */
+  #main {
+    width: 990px;
+  }
 }
 
-/* line 28, ../scss/main.scss */
-#white {
-  color: #fff;
-  font-family: 'BebasNeue', sans-serif;
-}
-
-/* line 33, ../scss/main.scss */
-#turquoise {
-  color: #46b29d;
-  font-family: 'BebasNeue', sans-serif;
-}
-
-/* line 38, ../scss/main.scss */
-.navbar {
-  margin: 0 auto;
-  background-color: #e0dcda;
-  font-family: 'BebasNeue', sans-serif;
-  border: none;
-}
-/* line 44, ../scss/main.scss */
-.navbar .navbar-nav {
-  width: 100%;
-  text-align: center;
-}
-/* line 47, ../scss/main.scss */
-.navbar .navbar-nav > li {
-  float: none;
-  display: inline-block;
-}
-/* line 50, ../scss/main.scss */
-.navbar .navbar-nav > li > a {
-  color: #000;
-}
-/* line 54, ../scss/main.scss */
-.navbar .navbar-nav .navbar-right {
-  float: right;
-}
-/* line 59, ../scss/main.scss */
-.navbar .navbar-default {
-  width: 100%;
-  text-align: center;
-}
-/* line 62, ../scss/main.scss */
-.navbar .navbar-default > li {
-  float: none;
-  display: inline-block;
-}
-/* line 67, ../scss/main.scss */
-.navbar .navbar-default > .active {
-  background-color: #fff;
-}
-
-/* line 73, ../scss/main.scss */
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  background-color: #fff;
-  color: #46b29d;
-}
-
-/* line 80, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 header {
-  background-color: #000;
-  font-family: 'BebasNeue', sans-serif;
+  margin-bottom: 20px;
 }
-/* line 83, ../scss/main.scss */
+/* line 22, ../scss/main.scss */
 header .inner {
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
+}
+/* line 26, ../scss/main.scss */
+header .inner .logo {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+/* line 30, ../scss/main.scss */
+header .inner .logo .name {
+  font-size: 25px;
+  font-weight: 400;
+}
+/* line 35, ../scss/main.scss */
+header .inner .logo .version {
+  color: #aaa;
+  font-size: 10px;
+}
+/* line 36, ../scss/main.scss */
+header .inner .logo .version::before {
+  content: "Version";
+  display: inline-block;
+  margin-right: 5px;
+}
+@media (min-width: 990px) {
+  /* line 22, ../scss/main.scss */
+  header .inner {
+    width: 990px;
+  }
+}
+/* line 54, ../scss/main.scss */
+header::after {
+  content: '';
   display: block;
-}
-/* line 90, ../scss/main.scss */
-header .btn {
-  background-color: #000;
-  border: none;
-  font-size: 11.5pt;
-  float: right;
-}
-/* line 95, ../scss/main.scss */
-header .btn:hover {
-  background-color: #000;
+  height: 10px;
+  width: 100%;
+  background-color: #337ab7;
+  margin-top: 5px;
 }
 
-/* line 101, ../scss/main.scss */
-main {
-  background-color: #f2f2f2;
-}
-
-/* line 106, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 .toast-success {
   background-color: #dff0d8;
 }
 
-/* line 107, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .toast-error {
   background-color: #f2dede;
 }
 
-/* line 111, ../scss/main.scss */
+/* TODO use SCSS... */
+/* line 73, ../scss/main.scss */
 .full {
   width: 100%;
 }
 
-/* line 114, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .gap {
   height: 30px;
   width: 100%;
@@ -122,51 +80,60 @@ main {
   display: block;
 }
 
-/* line 122, ../scss/main.scss */
-footer {
-  background: #000;
-  font-family: 'BebasNeue', sans-serif;
-  padding: 50px;
-  min-height: auto;
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
-}
-/* line 132, ../scss/main.scss */
-footer ul {
-  list-style-type: none;
-  padding: auto;
-}
-/* line 136, ../scss/main.scss */
-footer ul #social {
-  display: flex;
-  align-items: center;
-}
-/* line 142, ../scss/main.scss */
-footer li {
-  float: left;
-  padding-left: 100px;
-  color: #fff;
-  font-family: 'BebasNeue', sans-serif;
+/* line 82, ../scss/main.scss */
+.footer {
+  background: #EDEFF1;
   height: auto;
-  display: inline-block;
-}
-/* line 149, ../scss/main.scss */
-footer li a {
-  color: #fff;
-  font-family: 'BebasNeue', sans-serif;
-  font-size: 10.5pt;
-  display: block;
-  text-align: center;
-  overflow: hidden;
-}
-/* line 156, ../scss/main.scss */
-footer li a:hover {
-  text-decoration: none;
-  color: #fff;
+  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #DDDDDD;
 }
 
-/* line 166, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
+.footer p {
+  margin: 0;
+}
+
+/* line 94, ../scss/main.scss */
+.footer img {
+  max-width: 100%;
+}
+
+/* line 97, ../scss/main.scss */
+.footer h3 {
+  border-bottom: 1px solid #BAC1C8;
+  color: #54697E;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 40px 0 10px;
+  text-transform: uppercase;
+}
+
+/* line 106, ../scss/main.scss */
+.footer ul {
+  font-size: 13px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 15px;
+  color: #7F8C8D;
+}
+
+/* line 114, ../scss/main.scss */
+.footer ul li a {
+  padding: 0 0 5px 0;
+  display: block;
+}
+
+/* line 118, ../scss/main.scss */
+.footer a {
+  color: #78828D;
+}
+
+/* line 121, ../scss/main.scss */
 .supportLi h4 {
   font-size: 20px;
   font-weight: lighter;
@@ -175,7 +142,7 @@ footer li a:hover {
   padding-bottom: 0;
 }
 
-/* line 173, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 .newsletter-box input#appendedInputButton {
   background: #FFFFFF;
   display: inline-block;
@@ -185,7 +152,7 @@ footer li a:hover {
   width: 100%;
 }
 
-/* line 181, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .newsletter-box .btn {
   border: medium none;
   -webkit-border-radius: 3px;
@@ -200,18 +167,18 @@ footer li a:hover {
   color: #fff;
 }
 
-/* line 194, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .newsletter-box {
   overflow: hidden;
 }
 
-/* line 197, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 .bg-gray {
   background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
   box-shadow: 0 1px 0 #B4B3B3;
 }
 
-/* line 201, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .social li {
   background: none repeat scroll 0 0 #B5B5B5;
   border: 2px solid #B5B5B5;
@@ -234,7 +201,7 @@ footer li a:hover {
   -o-transition: all 0.5s ease 0s;
 }
 
-/* line 222, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 .social li:hover {
   transform: scale(1.15) rotate(360deg);
   -webkit-transform: scale(1.1) rotate(360deg);
@@ -243,25 +210,25 @@ footer li a:hover {
   -o-transform: scale(1.1) rotate(360deg);
 }
 
-/* line 229, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 .social li a {
   color: #EDEFF1;
 }
 
-/* line 232, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 .social li:hover {
   border: 2px solid #2c3e50;
   background: #2c3e50;
 }
 
-/* line 236, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 .social li a i {
   font-size: 16px;
   margin: 0 0 0 5px;
   color: #EDEFF1 !important;
 }
 
-/* line 241, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 .footer-bottom {
   background: #E3E3E3;
   border-top: 1px solid #DDDDDD;
@@ -269,17 +236,17 @@ footer li a:hover {
   padding-bottom: 10px;
 }
 
-/* line 247, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 .footer-bottom p.pull-left {
   padding-top: 6px;
 }
 
-/* line 250, ../scss/main.scss */
+/* line 205, ../scss/main.scss */
 .payments {
   font-size: 1.5em;
 }
 
-/* line 254, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .wrapper.login {
   width: 350px;
 }
