@@ -3,6 +3,16 @@
 <!-- Container -->
 <div class="container-fluid">
 
+<!-- Reihe für immer zentrierte Überschrift -->
+<div class="row">
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
+        <h1>Aktuelle Infos</h1>
+        <hr/>
+    </div>
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+</div>
+
     <!-- Button zum Erstellen von News -->
     <?php if($this->username == 'tierheim@admin'): ?>
     <div class="row">
@@ -18,7 +28,8 @@
         //News-Datum anlegen
         $newsdat = new DateTime($news->datum);?>
 
-        <div class="row">   
+        <div class="row">
+        <div class="col-xs-0 col-md-1 col-lg-2"></div>   
             <div class="col-xs-12 col-md-10 col-lg-8">
                 <h1>
                     <?php echo $news->ueberschrift; ?>
@@ -33,10 +44,8 @@
                     <button class="btn btn-sm btn-danger">Löschen</button>
                 <?php endif?>
             </div>
+            <div class="col-xs-0 col-md-1 col-lg-2"></div>
         </div>
-        
-        <!-- Trennstrich & Abstandshalter -->
-        <hr/>
     <?php endforeach; ?>
 </div>
 <?php echo $this->footer; ?>

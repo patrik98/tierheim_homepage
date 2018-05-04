@@ -5,9 +5,17 @@ echo $this->header;
 ?>
 
     <div class="container-fluid">
+    <!-- Reihe für immer zentrierte Überschrift -->
+<div class="row">
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
+        <h1>Login</h1>
+        <hr/>
+    </div>
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+</div>
+    
         <div class="row">
-            <h1 class="col-xs-12">Login</h1>
-
             <p class="col-xs-12 col-md-10">
                 Sie besitzen noch keinen Account? Dann können Sie sich <a href="register">hier registrieren</a>.
             </p>

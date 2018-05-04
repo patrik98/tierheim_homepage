@@ -3,7 +3,6 @@
 echo $this->header;
 
 ?>
-<main>
 <div class="container-fluid">
 
 <?php if($this->UserRegistered): ?>
@@ -14,8 +13,17 @@ echo $this->header;
 
 <?php else: ?>
 
+<!-- Reihe für immer zentrierte Überschrift -->
+<div class="row">
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
+        <h1>Registrieren</h1>
+        <hr/>
+    </div>
+    <div class="col-xs-0 col-md-1 col-lg-2"></div>
+</div>
+
     <div class="row">
-        <h1 class="col-xs-12">Registrieren</h1>
 
         <p class="col-xs-12 col-md-10">
             Sie haben sich bereits registriert? Dann können Sie sich <a href="login">hier einloggen</a>.
@@ -123,7 +131,6 @@ echo $this->header;
 <?php endif; ?>
 
 </div>
-</main>
 <?php
 
 echo $this->footer;

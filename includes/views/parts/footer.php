@@ -29,17 +29,19 @@
                         <li> <a href="#"> Lorem Ipsum </a> </li>
                     </ul>
                 </div>-->
-            <div class="container-fluid">
-                <div class="row">
-                    <ul>
-                        <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="kontakt" target="_blank">Kontakt</a> </li>
-                        <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="kontakt" target="_blank">Impressum</a> </li>
-                        <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="https://de.wikipedia.org/wiki/Haftungsklausel" target="_blank">Haftungsausschluss</a></li>
-                        <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="https://de.wikipedia.org/wiki/Allgemeine_Gesch%C3%A4ftsbedingungen" target="_blank">AGB</a></li>
-                    </ul>
+                <div class="container-fluid">
+                    <div class="row">
+                        <ul>
+                            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="kontakt" target="_blank">Kontakt</a> </li>
+                            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="kontakt" target="_blank">Impressum</a> </li>
+                            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="https://de.wikipedia.org/wiki/Haftungsklausel" target="_blank">Haftungsausschluss</a>
+                            </li>
+                            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="https://de.wikipedia.org/wiki/Allgemeine_Gesch%C3%A4ftsbedingungen" target="_blank">AGB</a>
+                            </li>
+                        </ul>
 
+                    </div>
                 </div>
-            </div>
 
 
 
@@ -70,4 +72,3 @@
 <?php if($this->current == 'register'): ?>
 <script type="text/javascript" src="js/register.js"></script>
 <?php endif; ?>
-
