@@ -28,5 +28,8 @@ $route['/kontakt.html'] = array('controller' => 'KontaktController', 'uniqueName
 $route['/createNews'] = array('controller' => 'NewsController', 'uniqueName' => 'createNews');
 $route['/createNews.html'] = array('controller' => 'NewsController', 'uniqueName' => 'createNews');
 
+$route['/hilf_uns'] = array('controller' => 'HilfUnsController', 'uniqueName' => 'hilf_uns');
+$route['/hilf_uns.html'] = array('controller' => 'HilfUnsController', 'uniqueName' => 'hilf_uns');
+
 ?>
 

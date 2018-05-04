@@ -1,12 +1,21 @@
 <?php echo $this->header;?>
 <div class="container-fluid">
+<!-- Reihe für immer zentrierte Überschrift -->
+<div class="row">
+    <div class="col-xs-0 col-md-2 col-lg-4"></div>
+    <div class="col-xs-12 col-md-8 col-lg-4"  style="text-align: center">
+        <h1>Aktuell untergebrachte Tiere</h1>
+        <hr/>
+    </div>
+    <div class="col-xs-0 col-md-2 col-lg-4"></div>
+</div>
 <div class="row">
 
     <?php foreach($this->tiere as $tier):
         //Geburtsdatum anlegen
         $gebdat = new DateTime($tier->gebdat);
 
-        //Bestimmung aktuelles Alter als Jahre und Monate (für Tiere jünger 1)
+        //Bestimmung aktuelles Alter als Jahre, Monate für Tiere jünger 1 Jahr
         $today  = new DateTime('today');
         $age_years = $gebdat->diff($today)->y;
         $age_months = $gebdat->diff($today)->m;
@@ -53,9 +62,8 @@
             </div>
         </div>
     </div>
-
     <?php endforeach; ?>
 </div>
-</div>
+</div><!-- /.container-fluid -->
 
 <?php echo $this->footer;?>
