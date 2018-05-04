@@ -33,8 +33,6 @@
     <?php endif; ?>
 </header>
 
-
-
 <nav class="navbar navbar-default" id="main">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->

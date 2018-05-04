@@ -1,7 +1,6 @@
 <?php echo $this->header; ?>
 
 <!-- Container -->
-<main>
 <div class="container-fluid">
 
     <!-- Button zum Erstellen von News -->
@@ -16,7 +15,7 @@
     <!-- Schleife vgl. zu tiere.php mit row -->
     <?php foreach($this->news as $news):
 
-        //Datums-Format in String zur echo-Ausgabe umwandeln
+        //News-Datum anlegen
         $newsdat = new DateTime($news->datum);?>
 
         <div class="row">   
@@ -40,5 +39,4 @@
         <hr/>
     <?php endforeach; ?>
 </div>
-</main>
 <?php echo $this->footer; ?>
