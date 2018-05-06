@@ -56,8 +56,7 @@ echo $this->header;
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10 col-xs-12 col-md-2">
-                <button type="submit" style="border: 0; background: transparent; margin: 0 0 0 -22px">
-                    <img src="images/Login.png" alt="submit"/>
+                <button class="button" type="submit"> Login
                 </button>
             </div>
 

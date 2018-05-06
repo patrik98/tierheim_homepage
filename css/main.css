@@ -221,56 +221,70 @@ h2 {
 }
 
 /* line 199, ../scss/main.scss */
+.button {
+  background: #46b29d;
+  padding: 6px 22px;
+  border: 1px solid #000;
+  -moz-box-shadow: inset 0 0 3px #000;
+  -webkit-box-shadow: inset 0 0 3px #000;
+  box-shadow: inset 0 0 3px #000;
+  color: white;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+/* line 213, ../scss/main.scss */
 hr {
   margin: 0 0 12px 0;
 }
 
-/* line 203, ../scss/main.scss */
+/* line 217, ../scss/main.scss */
 .navbar {
   margin: 0 auto;
   background-color: #e0dcda;
   font-family: 'BebasNeue', sans-serif;
   border: none;
 }
-/* line 209, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .navbar .navbar-nav {
   width: 100%;
   text-align: center;
 }
-/* line 212, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 .navbar .navbar-nav > li {
   float: none;
   display: inline-block;
   border-right: 1px solid #adadad;
 }
-/* line 217, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 .navbar .navbar-nav > li:last-child {
   border-right: none;
 }
-/* line 220, ../scss/main.scss */
+/* line 234, ../scss/main.scss */
 .navbar .navbar-nav > li > a {
   color: #000;
 }
-/* line 224, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .navbar .navbar-nav .navbar-right {
   float: right;
 }
-/* line 229, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .navbar .navbar-default {
   width: 100%;
   text-align: center;
 }
-/* line 232, ../scss/main.scss */
+/* line 246, ../scss/main.scss */
 .navbar .navbar-default > li {
   float: none;
   display: inline-block;
 }
-/* line 237, ../scss/main.scss */
+/* line 251, ../scss/main.scss */
 .navbar .navbar-default > .active {
   background-color: #f2f2f2;
 }
 
-/* line 243, ../scss/main.scss */
+/* line 257, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -278,45 +292,45 @@ hr {
   color: #e37b40;
 }
 
-/* line 250, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 header {
   background-color: #000;
   font-family: 'BebasNeue', sans-serif;
 }
-/* line 254, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 header .inner {
   margin: 0 auto;
   width: 100%;
   display: block;
 }
-/* line 261, ../scss/main.scss */
+/* line 275, ../scss/main.scss */
 header .btn {
   background-color: #000;
   border: none;
   font-size: 11.5pt;
   float: right;
 }
-/* line 266, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 header .btn:hover {
   background-color: #000;
 }
 
-/* line 272, ../scss/main.scss */
+/* line 286, ../scss/main.scss */
 .toast-success {
   background-color: #dff0d8;
 }
 
-/* line 276, ../scss/main.scss */
+/* line 290, ../scss/main.scss */
 .toast-error {
   background-color: #f2dede;
 }
 
-/* line 280, ../scss/main.scss */
+/* line 294, ../scss/main.scss */
 .full {
   width: 100%;
 }
 
-/* line 284, ../scss/main.scss */
+/* line 298, ../scss/main.scss */
 .gap {
   height: 30px;
   width: 100%;
@@ -324,7 +338,7 @@ header .btn:hover {
   display: block;
 }
 
-/* line 291, ../scss/main.scss */
+/* line 305, ../scss/main.scss */
 footer {
   background: #000;
   font-family: 'BebasNeue', sans-serif;
@@ -335,23 +349,23 @@ footer {
   position: absolute;
   text-align: center;
 }
-/* line 301, ../scss/main.scss */
+/* line 315, ../scss/main.scss */
 footer div.navbar-nav {
   margin-top: 40px;
   float: none;
   text-align: center;
 }
-/* line 307, ../scss/main.scss */
+/* line 321, ../scss/main.scss */
 footer ul {
   list-style-type: none;
   padding: auto;
 }
-/* line 311, ../scss/main.scss */
+/* line 325, ../scss/main.scss */
 footer ul #social {
   display: flex;
   align-items: center;
 }
-/* line 317, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 footer li {
   float: left;
   padding-left: 100px;
@@ -360,7 +374,7 @@ footer li {
   height: auto;
   display: inline-block;
 }
-/* line 324, ../scss/main.scss */
+/* line 338, ../scss/main.scss */
 footer li a {
   color: #fff;
   font-family: 'BebasNeue', sans-serif;
@@ -369,13 +383,13 @@ footer li a {
   text-align: center;
   overflow: hidden;
 }
-/* line 331, ../scss/main.scss */
+/* line 345, ../scss/main.scss */
 footer li a:hover {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 339, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
 .supportLi h4 {
   font-size: 20px;
   font-weight: lighter;
@@ -384,7 +398,7 @@ footer li a:hover {
   padding-bottom: 0;
 }
 
-/* line 347, ../scss/main.scss */
+/* line 361, ../scss/main.scss */
 .newsletter-box input#appendedInputButton {
   background: #FFFFFF;
   display: inline-block;
@@ -394,7 +408,7 @@ footer li a:hover {
   width: 100%;
 }
 
-/* line 356, ../scss/main.scss */
+/* line 370, ../scss/main.scss */
 .newsletter-box .btn {
   border: medium none;
   -webkit-border-radius: 3px;
@@ -409,18 +423,18 @@ footer li a:hover {
   color: #fff;
 }
 
-/* line 370, ../scss/main.scss */
+/* line 384, ../scss/main.scss */
 .newsletter-box {
   overflow: hidden;
 }
 
-/* line 374, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .bg-gray {
   background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
   box-shadow: 0 1px 0 #B4B3B3;
 }
 
-/* line 379, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
 .social li {
   background: none repeat scroll 0 0 #B5B5B5;
   border: 2px solid #B5B5B5;
@@ -443,7 +457,7 @@ footer li a:hover {
   -o-transition: all 0.5s ease 0s;
 }
 
-/* line 401, ../scss/main.scss */
+/* line 415, ../scss/main.scss */
 .social li:hover {
   transform: scale(1.15) rotate(360deg);
   -webkit-transform: scale(1.1) rotate(360deg);
@@ -452,25 +466,25 @@ footer li a:hover {
   -o-transform: scale(1.1) rotate(360deg);
 }
 
-/* line 409, ../scss/main.scss */
+/* line 423, ../scss/main.scss */
 .social li a {
   color: #EDEFF1;
 }
 
-/* line 413, ../scss/main.scss */
+/* line 427, ../scss/main.scss */
 .social li:hover {
   border: 2px solid #2c3e50;
   background: #2c3e50;
 }
 
-/* line 418, ../scss/main.scss */
+/* line 432, ../scss/main.scss */
 .social li a i {
   font-size: 16px;
   margin: 0 0 0 5px;
   color: #EDEFF1 !important;
 }
 
-/* line 424, ../scss/main.scss */
+/* line 438, ../scss/main.scss */
 .footer-bottom {
   background: #E3E3E3;
   border-top: 1px solid #DDDDDD;
@@ -478,17 +492,17 @@ footer li a:hover {
   padding-bottom: 10px;
 }
 
-/* line 431, ../scss/main.scss */
+/* line 445, ../scss/main.scss */
 .footer-bottom p.pull-left {
   padding-top: 6px;
 }
 
-/* line 435, ../scss/main.scss */
+/* line 449, ../scss/main.scss */
 .payments {
   font-size: 1.5em;
 }
 
-/* line 439, ../scss/main.scss */
+/* line 453, ../scss/main.scss */
 .wrapper.login {
   width: 350px;
 }

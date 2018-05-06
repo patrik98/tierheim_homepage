@@ -143,8 +143,7 @@ echo $this->header;
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10 col-xs-12 col-md-2">
-                                <button type="submit" style="border: 0; background: transparent; margin: -20px">
-                                    <img src="images/Registrieren.png" alt="submit"/>
+                                <button class="button" type="submit"> Registrieren
                                 </button>
                             </div>
 
