@@ -31,5 +31,7 @@ $route['/createNews.html'] = array('controller' => 'NewsController', 'uniqueName
 $route['/hilf_uns'] = array('controller' => 'HilfUnsController', 'uniqueName' => 'hilf_uns');
 $route['/hilf_uns.html'] = array('controller' => 'HilfUnsController', 'uniqueName' => 'hilf_uns');
 
+$route['/activity'] = array('controller' => 'ActivityController', 'uniqueName' => 'activity');
+
 ?>
 

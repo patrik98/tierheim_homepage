@@ -45,12 +45,15 @@ echo $this->header;
             </div>
         </div>
 
+            <div class="col-xs-0 col-md-8">
+            <span id="login-text"><a style="font-weight: bold"href="activity">Aktivität hinzufügen</a> </span><hr>
+
 
         <!-- Übersicht Aktivitäten -->
 
         <!-- Montag - Mittwoch -->
 
-        <form method = "post" id="activityForm" action="addActivity">
+       <!-- <form method = "post" id="activityForm" action="addActivity">
 
             <div class="row">
 
@@ -65,7 +68,7 @@ echo $this->header;
 
                 ?>
 
-                <!-- Montag -->
+
 
                 <div class="col-xs-4">
                     <div class="form-group">
@@ -88,7 +91,7 @@ echo $this->header;
 
                 <input type="hidden" name="action" value="addActivity">
 
-                <!-- Dienstag -->
+
                 <div class="col-xs-4">
                     <div class="form-group">
                         <div class="panel panel-default">
@@ -109,7 +112,7 @@ echo $this->header;
                 </div>
 
 
-                <!-- Mittwoch -->
+
                 <div class="col-xs-4">
                     <div class="form-group">
                         <div class="panel panel-default">
@@ -130,9 +133,8 @@ echo $this->header;
                 </div>
             </div>
 
-            <!-- Donnerstag - Samstag -->
             <div class="row">
-                <!-- Donnerstag -->
+
                 <div class="col-xs-4">
                     <div class="form-group">
                         <div class="panel panel-default">
@@ -152,7 +154,7 @@ echo $this->header;
                     </div>
                 </div>
 
-                <!-- Freitag -->
+
                 <div class="col-xs-4">
                     <div class="form-group">
                         <div class="panel panel-default">
@@ -172,7 +174,7 @@ echo $this->header;
                     </div>
                 </div>
 
-                <!-- Samstag -->
+
                 <div class="col-xs-4">
                     <div class="form-group">
                         <div class="panel panel-default">
@@ -194,9 +196,7 @@ echo $this->header;
 
             </div>
 
-            <!--<input type="hidden" name="action" value="addActivity">-->
-
-        </form>
+        </form>-->
     </div>
 
 </main>
