@@ -21,10 +21,8 @@ class TierprofilController extends Controller
 
         $this->view = new View($this->viewFileName, $pageName);
 
-        $this->getMondayActivity();
         $this->run();
         $this->output();
-
     }
 
     public function run()
@@ -35,7 +33,7 @@ class TierprofilController extends Controller
         if(isset($_GET['id']) && $_GET['id'] != '')
         {
             //passt tier holen
-            $this->view->tierObj = TierModel::getTierById($_GET['id']);
+            $tierObj = TierModel::getTierById($_GET['id']);
 
         }
         else
@@ -44,93 +42,5 @@ class TierprofilController extends Controller
         }
         //$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
     }
-
-    public function getMondayActivity()
-    {
-
-        if (!isset($_POST['MontagsAction']) && $_POST['MontagsUhrzeit'])  {
-
-            $MontagsAction = $_POST['MontagsAction'];
-            $MontagsUhrzeit = $_POST['MontagsUhrzeit'];
-
-            TierModel::createActivity(array($MontagsAction=>'montagsaction', $MontagsUhrzeit=>'montagsuhrzeit') );
-
-        } else {
-            echo 'Please choose an activity';
-        }
-
-    }
-
-    /*
-    public function getMondayActivity()
-    {
-
-        if (!isset($_POST['MontagsAction']) && $_POST['MontagsUhrzeit'])  {
-
-            $MontagsAction = $_POST['MontagsAction'];
-            $MontagsUhrzeit = $_POST['MontagsUhrzeit'];
-
-        } else {
-            echo 'Please choose an activity';
-        }
-
-    }
-
-    public function getMondayActivity()
-    {
-
-        if (!isset($_POST['MontagsAction']) && $_POST['MontagsUhrzeit'])  {
-
-            $MontagsAction = $_POST['MontagsAction'];
-            $MontagsUhrzeit = $_POST['MontagsUhrzeit'];
-
-        } else {
-            echo 'Please choose an activity';
-        }
-
-    }
-
-    public function getMondayActivity()
-    {
-
-        if (!isset($_POST['MontagsAction']) && $_POST['MontagsUhrzeit'])  {
-
-            $MontagsAction = $_POST['MontagsAction'];
-            $MontagsUhrzeit = $_POST['MontagsUhrzeit'];
-
-        } else {
-            echo 'Please choose an activity';
-        }
-
-    }
-
-    public function getMondayActivity()
-    {
-
-        if (!isset($_POST['MontagsAction']) && $_POST['MontagsUhrzeit'])  {
-
-            $MontagsAction = $_POST['MontagsAction'];
-            $MontagsUhrzeit = $_POST['MontagsUhrzeit'];
-
-        } else {
-            echo 'Please choose an activity';
-        }
-
-    }
-
-    public function getMondayActivity()
-    {
-
-        if (!isset($_POST['MontagsAction']) && $_POST['MontagsUhrzeit'])  {
-
-            $MontagsAction = $_POST['MontagsAction'];
-            $MontagsUhrzeit = $_POST['MontagsUhrzeit'];
-
-        } else {
-            echo 'Please choose an activity';
-        }
-
-    }
-*/
 
 }

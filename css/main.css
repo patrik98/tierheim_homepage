@@ -1,78 +1,312 @@
-/* line 11, ../scss/main.scss */
+@charset "UTF-8";
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("fonts/BEBAS.eot");
+  src: local("Ôÿ║"), url("fonts/BEBAS.woff") format("woff"), url("fonts/BEBAS.ttf") format("truetype"), url("fonts/BEBAS.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 23, ../scss/main.scss */
 #main {
   margin: 0 auto;
-  width: 90%;
-}
-@media (min-width: 990px) {
-  /* line 11, ../scss/main.scss */
-  #main {
-    width: 990px;
-  }
 }
 
-/* line 21, ../scss/main.scss */
-header {
-  margin-bottom: 20px;
+/* line 27, ../scss/main.scss */
+#white {
+  color: #fff;
+  font-family: 'BebasNeue', sans-serif;
+  border-right: 1px solid #fff;
 }
-/* line 22, ../scss/main.scss */
+
+/* line 33, ../scss/main.scss */
+#main-color {
+  background-color: #f2f2f2;
+}
+
+/* line 37, ../scss/main.scss */
+#turquoise {
+  color: #46b29d;
+  font-family: 'BebasNeue', sans-serif;
+}
+
+/* line 42, ../scss/main.scss */
+#infotext {
+  font-family: Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+/* line 47, ../scss/main.scss */
+input[type=text] {
+  width: 100%;
+  border: 1px solid #e0dcda;
+  border-radius: 4px;
+  margin: 4px 0;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+/* line 55, ../scss/main.scss */
+input[type=text]:focus {
+  border-color: #46b29d;
+  box-shadow: 0 0 4px 0 #46b29d;
+}
+
+/* line 60, ../scss/main.scss */
+.inputWithIcon {
+  position: relative;
+}
+/* line 62, ../scss/main.scss */
+.inputWithIcon input[type=text] {
+  padding-left: 40px;
+}
+/* line 64, ../scss/main.scss */
+.inputWithIcon input[type=text]:focus + i {
+  color: #46b29d;
+}
+/* line 68, ../scss/main.scss */
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  padding: 13px 12px;
+  color: #e0dcda;
+  transition: .3s;
+}
+
+/* line 77, ../scss/main.scss */
+input[type=date] {
+  width: 100%;
+  border: 1px solid #e0dcda;
+  border-radius: 4px;
+  margin: 4px 0;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+/* line 85, ../scss/main.scss */
+input[type=date]:focus {
+  border-color: #46b29d;
+  box-shadow: 0 0 4px 0 #46b29d;
+}
+
+/* line 90, ../scss/main.scss */
+.inputWithIcon {
+  position: relative;
+}
+/* line 92, ../scss/main.scss */
+.inputWithIcon input[type=date] {
+  padding-left: 40px;
+}
+/* line 94, ../scss/main.scss */
+.inputWithIcon input[type=date]:focus + i {
+  color: #46b29d;
+}
+/* line 98, ../scss/main.scss */
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  padding: 13px 12px;
+  color: #e0dcda;
+  transition: .3s;
+}
+
+/* line 107, ../scss/main.scss */
+input[type=password] {
+  width: 100%;
+  border: 1px solid #e0dcda;
+  border-radius: 4px;
+  margin: 4px 0;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+/* line 115, ../scss/main.scss */
+input[type=password]:focus {
+  border-color: #46b29d;
+  box-shadow: 0 0 4px 0 #46b29d;
+}
+
+/* line 120, ../scss/main.scss */
+.inputWithIcon {
+  position: relative;
+}
+/* line 122, ../scss/main.scss */
+.inputWithIcon input[type=password] {
+  padding-left: 40px;
+}
+/* line 124, ../scss/main.scss */
+.inputWithIcon input[type=password]:focus + i {
+  color: #46b29d;
+}
+/* line 128, ../scss/main.scss */
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  padding: 13px 12px;
+  margin: -40px 0 0 0;
+  color: #e0dcda;
+  transition: .3s;
+}
+
+/* line 138, ../scss/main.scss */
+input[type=email] {
+  width: 100%;
+  border: 1px solid #e0dcda;
+  border-radius: 4px;
+  margin: 4px 0;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+/* line 146, ../scss/main.scss */
+input[type=email]:focus {
+  border-color: #46b29d;
+  box-shadow: 0 0 4px 0 #46b29d;
+}
+
+/* line 151, ../scss/main.scss */
+.inputWithIcon {
+  position: relative;
+}
+/* line 153, ../scss/main.scss */
+.inputWithIcon input[type=email] {
+  padding-left: 40px;
+}
+/* line 155, ../scss/main.scss */
+.inputWithIcon input[type=email]:focus + i {
+  color: #46b29d;
+}
+/* line 159, ../scss/main.scss */
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  padding: 13px 12px;
+  margin: -40px 0 0 0;
+  color: #e0dcda;
+  transition: .3s;
+}
+
+/* line 169, ../scss/main.scss */
+h1 {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 25pt;
+  color: #000;
+  margin: 20px 0 20px -13px;
+  padding: 0;
+}
+
+/* line 177, ../scss/main.scss */
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 0 -13px;
+  padding: 0;
+}
+
+/* line 185, ../scss/main.scss */
+#login-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+  margin: 0 0 0 -13px;
+}
+
+/* line 191, ../scss/main.scss */
+hr {
+  margin: 0 0 12px 0;
+}
+
+/* line 195, ../scss/main.scss */
+.navbar {
+  margin: 0 auto;
+  background-color: #e0dcda;
+  font-family: 'BebasNeue', sans-serif;
+  border: none;
+}
+/* line 201, ../scss/main.scss */
+.navbar .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+/* line 204, ../scss/main.scss */
+.navbar .navbar-nav > li {
+  float: none;
+  display: inline-block;
+  border-right: 1px solid #adadad;
+}
+/* line 209, ../scss/main.scss */
+.navbar .navbar-nav > li:last-child {
+  border-right: none;
+}
+/* line 212, ../scss/main.scss */
+.navbar .navbar-nav > li > a {
+  color: #000;
+}
+/* line 216, ../scss/main.scss */
+.navbar .navbar-nav .navbar-right {
+  float: right;
+}
+/* line 221, ../scss/main.scss */
+.navbar .navbar-default {
+  width: 100%;
+  text-align: center;
+}
+/* line 224, ../scss/main.scss */
+.navbar .navbar-default > li {
+  float: none;
+  display: inline-block;
+}
+/* line 229, ../scss/main.scss */
+.navbar .navbar-default > .active {
+  background-color: #f2f2f2;
+}
+
+/* line 235, ../scss/main.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #f2f2f2;
+  color: #e37b40;
+}
+
+/* line 242, ../scss/main.scss */
+header {
+  background-color: #000;
+  font-family: 'BebasNeue', sans-serif;
+}
+/* line 246, ../scss/main.scss */
 header .inner {
   margin: 0 auto;
-  width: 90%;
-}
-/* line 26, ../scss/main.scss */
-header .inner .logo {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-/* line 30, ../scss/main.scss */
-header .inner .logo .name {
-  font-size: 25px;
-  font-weight: 400;
-}
-/* line 35, ../scss/main.scss */
-header .inner .logo .version {
-  color: #aaa;
-  font-size: 10px;
-}
-/* line 36, ../scss/main.scss */
-header .inner .logo .version::before {
-  content: "Version";
-  display: inline-block;
-  margin-right: 5px;
-}
-@media (min-width: 990px) {
-  /* line 22, ../scss/main.scss */
-  header .inner {
-    width: 990px;
-  }
-}
-/* line 54, ../scss/main.scss */
-header::after {
-  content: '';
-  display: block;
-  height: 10px;
   width: 100%;
-  background-color: #337ab7;
-  margin-top: 5px;
+  display: block;
+}
+/* line 253, ../scss/main.scss */
+header .btn {
+  background-color: #000;
+  border: none;
+  font-size: 11.5pt;
+  float: right;
+}
+/* line 258, ../scss/main.scss */
+header .btn:hover {
+  background-color: #000;
 }
 
-/* line 67, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 .toast-success {
   background-color: #dff0d8;
 }
 
-/* line 68, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 .toast-error {
   background-color: #f2dede;
 }
 
-/* TODO use SCSS... */
-/* line 73, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 .full {
   width: 100%;
 }
 
-/* line 76, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .gap {
   height: 30px;
   width: 100%;
@@ -80,60 +314,58 @@ header::after {
   display: block;
 }
 
-/* line 82, ../scss/main.scss */
-.footer {
-  background: #EDEFF1;
-  height: auto;
-  padding-bottom: 30px;
-  position: relative;
+/* line 283, ../scss/main.scss */
+footer {
+  background: #000;
+  font-family: 'BebasNeue', sans-serif;
+  padding: 40px;
+  min-height: auto;
   width: 100%;
-  border-bottom: 1px solid #CCCCCC;
-  border-top: 1px solid #DDDDDD;
+  margin: 25px auto;
+  position: absolute;
+  text-align: center;
 }
-
-/* line 91, ../scss/main.scss */
-.footer p {
-  margin: 0;
+/* line 293, ../scss/main.scss */
+footer div.navbar-nav {
+  margin-top: 40px;
+  float: none;
+  text-align: center;
 }
-
-/* line 94, ../scss/main.scss */
-.footer img {
-  max-width: 100%;
-}
-
-/* line 97, ../scss/main.scss */
-.footer h3 {
-  border-bottom: 1px solid #BAC1C8;
-  color: #54697E;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 27px;
-  padding: 40px 0 10px;
-  text-transform: uppercase;
-}
-
-/* line 106, ../scss/main.scss */
-.footer ul {
-  font-size: 13px;
+/* line 299, ../scss/main.scss */
+footer ul {
   list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-  margin-top: 15px;
-  color: #7F8C8D;
+  padding: auto;
 }
-
-/* line 114, ../scss/main.scss */
-.footer ul li a {
-  padding: 0 0 5px 0;
+/* line 303, ../scss/main.scss */
+footer ul #social {
+  display: flex;
+  align-items: center;
+}
+/* line 309, ../scss/main.scss */
+footer li {
+  float: left;
+  padding-left: 100px;
+  color: #fff;
+  font-family: 'BebasNeue', sans-serif;
+  height: auto;
+  display: inline-block;
+}
+/* line 316, ../scss/main.scss */
+footer li a {
+  color: #fff;
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 12pt;
   display: block;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 323, ../scss/main.scss */
+footer li a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
-/* line 118, ../scss/main.scss */
-.footer a {
-  color: #78828D;
-}
-
-/* line 121, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 .supportLi h4 {
   font-size: 20px;
   font-weight: lighter;
@@ -142,7 +374,7 @@ header::after {
   padding-bottom: 0;
 }
 
-/* line 128, ../scss/main.scss */
+/* line 339, ../scss/main.scss */
 .newsletter-box input#appendedInputButton {
   background: #FFFFFF;
   display: inline-block;
@@ -152,7 +384,7 @@ header::after {
   width: 100%;
 }
 
-/* line 136, ../scss/main.scss */
+/* line 348, ../scss/main.scss */
 .newsletter-box .btn {
   border: medium none;
   -webkit-border-radius: 3px;
@@ -167,18 +399,18 @@ header::after {
   color: #fff;
 }
 
-/* line 149, ../scss/main.scss */
+/* line 362, ../scss/main.scss */
 .newsletter-box {
   overflow: hidden;
 }
 
-/* line 152, ../scss/main.scss */
+/* line 366, ../scss/main.scss */
 .bg-gray {
   background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
   box-shadow: 0 1px 0 #B4B3B3;
 }
 
-/* line 156, ../scss/main.scss */
+/* line 371, ../scss/main.scss */
 .social li {
   background: none repeat scroll 0 0 #B5B5B5;
   border: 2px solid #B5B5B5;
@@ -201,7 +433,7 @@ header::after {
   -o-transition: all 0.5s ease 0s;
 }
 
-/* line 177, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
 .social li:hover {
   transform: scale(1.15) rotate(360deg);
   -webkit-transform: scale(1.1) rotate(360deg);
@@ -210,25 +442,25 @@ header::after {
   -o-transform: scale(1.1) rotate(360deg);
 }
 
-/* line 184, ../scss/main.scss */
+/* line 401, ../scss/main.scss */
 .social li a {
   color: #EDEFF1;
 }
 
-/* line 187, ../scss/main.scss */
+/* line 405, ../scss/main.scss */
 .social li:hover {
   border: 2px solid #2c3e50;
   background: #2c3e50;
 }
 
-/* line 191, ../scss/main.scss */
+/* line 410, ../scss/main.scss */
 .social li a i {
   font-size: 16px;
   margin: 0 0 0 5px;
   color: #EDEFF1 !important;
 }
 
-/* line 196, ../scss/main.scss */
+/* line 416, ../scss/main.scss */
 .footer-bottom {
   background: #E3E3E3;
   border-top: 1px solid #DDDDDD;
@@ -236,17 +468,17 @@ header::after {
   padding-bottom: 10px;
 }
 
-/* line 202, ../scss/main.scss */
+/* line 423, ../scss/main.scss */
 .footer-bottom p.pull-left {
   padding-top: 6px;
 }
 
-/* line 205, ../scss/main.scss */
+/* line 427, ../scss/main.scss */
 .payments {
   font-size: 1.5em;
 }
 
-/* line 209, ../scss/main.scss */
+/* line 431, ../scss/main.scss */
 .wrapper.login {
   width: 350px;
 }

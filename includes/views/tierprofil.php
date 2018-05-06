@@ -6,40 +6,21 @@
  * Time: 18:46
  */
 echo $this->header;
-
-$con = @mysqli_connect('localhost', 'testuser', 'testpass', 'tierheim');
-
-if (!$con) {
-    echo "Error: " . mysqli_connect_error();
-    exit();
-}
-echo 'Connected to MySQL';
-
-$MontagsAction = $_POST['MontagsAction'];
-$MontagsUhrzeit = $_POST['MontagsUhrzeit'];
-
-
-
-$sql = "INSERT INTO map_aktivitaet (bezeichnung,termin) VALUES ('".$MontagsAction."','".$MontagsUhrzeit."')";
-$query=mysqli_query($con,$sql);
-
-
 ?>
-
-<div class="container-fluid">
+<div class="container-fluid" id="main-color">
 
     <!-- Thumbnails & Links zu den Tierprofilen -->
     <div class="row">
         <div class="col-xs-8 col-md-4">
             <div class="thumbnail">
-                <img src=" <?php echo $this->tierObj->bildlink ?>" alt="" style="width:100%">
+                <img src="original/images/600x600.jpg" alt="" style="width:100%">
                 <div class="caption">
-                    <p><?php echo $this->tierObj->name; ?>, <?php echo $this->tierObj->gebdat; ?>, <?php echo $this ->tierObj->eigenschaften; ?></p>
+                    <p>Bello, 10 Jahre alt, verspielt</p>
                 </div>
             </div>
         </div>
         <div class="col-xs-0 col-md-8">
-            <h2><?php echo $this->tierObj->name ?>'s Geschichte</h2>
+            <h2>Überschrift 2</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
     </div>
@@ -59,25 +40,7 @@ $query=mysqli_query($con,$sql);
                         </h4>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <form method="post" action="">
-                                <select name="MontagsAction" form="">
-                                    <option value=""</option>
-                                    <option value="gassi">Gassi</option>
-                                    <option value="spielen">Spielen</option>
-                                    <option value="berg">Berg</option>
-                                    <option value="laufen">Laufen</option>
-                                </select>
-
-                                <select name="MontagsUhrzeit" form="">
-                                    <option value=""</option>
-                                    <option value="time1">8:00 - 12:00</option>
-                                    <option value="time1">14:00 - 18:00</option>
-                                </select>
-
-                                <input type="submit">
-                            </form>
-                        </div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -93,23 +56,7 @@ $query=mysqli_query($con,$sql);
                         </h4>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <form method="post" action="">
-                                <select name="DienstagsAction" form="">
-                                    <option value=""</option>
-                                    <option value="gassi">Gassi</option>
-                                    <option value="spielen">Spielen</option>
-                                    <option value="berg">Berg</option>
-                                    <option value="laufen">Laufen</option>
-                                </select>
-
-                                <select name="DienstagsUhrzeit" form="">
-                                    <option value=""</option>
-                                    <option value="time1">8:00 - 12:00</option>
-                                    <option value="time1">14:00 - 18:00</option>
-                                </select>
-                                <input type="submit">
-                            </form></div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -125,23 +72,7 @@ $query=mysqli_query($con,$sql);
                         </h4>
                     </div>
                     <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <form method="post" action="">
-                                <select name="MittwochsAction" form="">
-                                    <option value=""</option>
-                                    <option value="gassi">Gassi</option>
-                                    <option value="spielen">Spielen</option>
-                                    <option value="berg">Berg</option>
-                                    <option value="laufen">Laufen</option>
-                                </select>
-
-                                <select name="MittwochsUhrzeit" form="">
-                                    <option value=""</option>
-                                    <option value="time1">8:00 - 12:00</option>
-                                    <option value="time1">14:00 - 18:00</option>
-                                </select>
-                                <input type="submit">
-                            </form></div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -160,25 +91,7 @@ $query=mysqli_query($con,$sql);
                         </h4>
                     </div>
                     <div id="collapse4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <form method="post" action="">
-
-                                <select name="DonnerstagsAction" form="">
-                                    <option value=""</option>
-                                    <option value="gassi">Gassi</option>
-                                    <option value="spielen">Spielen</option>
-                                    <option value="berg">Berg</option>
-                                    <option value="laufen">Laufen</option>
-                                </select>
-
-                                <select name="DonnerstagsUhrzeit" form="">
-                                    <option value=""</option>
-                                    <option value="time1">8:00 - 12:00</option>
-                                    <option value="time1">14:00 - 18:00</option>
-                                </select>
-                                <input type="submit">
-
-                            </form></div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -194,24 +107,7 @@ $query=mysqli_query($con,$sql);
                         </h4>
                     </div>
                     <div id="collapse5" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <form method="post" action="">
-                                <select name="FreitagsAction" form="">
-                                    <option value=""</option>
-                                    <option value="gassi">Gassi</option>
-                                    <option value="spielen">Spielen</option>
-                                    <option value="berg">Berg</option>
-                                    <option value="laufen">Laufen</option>
-                                </select>
-
-                                <select name="FreitagsUhrzeit" form="">
-                                    <option value=""</option>
-                                    <option value="time1">8:00 - 12:00</option>
-                                    <option value="time1">14:00 - 18:00</option>
-                                </select>
-                                <input type="submit">
-
-                            </form></div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>
@@ -227,25 +123,7 @@ $query=mysqli_query($con,$sql);
                         </h4>
                     </div>
                     <div id="collapse6" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <form method="post" action="">
-                                <select name="SamstagsAction" form="">
-                                    <option value=""</option>
-                                    <option value="gassi">Gassi</option>
-                                    <option value="spielen">Spielen</option>
-                                    <option value="berg">Berg</option>
-                                    <option value="laufen">Laufen</option>
-                                </select>
-
-                                <select name="SamstagsUhrzeit" form="">
-                                    <option value=""</option>
-                                    <option value="time1">8:00 - 12:00</option>
-                                    <option value="time1">14:00 - 18:00</option>
-                                </select>
-                                <input type="submit">
-
-                            </form>
-                        </div>
+                        <div class="panel-body">*Aktivität hinzufügen*</div>
                     </div>
                 </div>
             </div>

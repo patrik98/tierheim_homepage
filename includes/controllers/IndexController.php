@@ -25,8 +25,10 @@ class IndexController extends Controller
 
 	public function run()
 	{
-		$this->view->title = "Übersicht";
-		$this->view->username = $this->user->username;
+		$this->view->title = "Über uns";
+        $this->view->username = $this->user->username;
+        
+        $this->view->news = NewsModel::getAllNews();
 
 	}
 
