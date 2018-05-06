@@ -142,7 +142,7 @@ echo $this->header;
                         </div>
 
                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10 col-xs-12 col-md-2">
+                            <div class="col-sm-offset-2 col-sm-pull-2 col-xs-12 col-md-pull-2">
                                 <button class="button" type="submit"> Registrieren
                                 </button>
                             </div>

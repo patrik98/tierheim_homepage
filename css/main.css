@@ -6,42 +6,43 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 23, ../scss/main.scss */
+/* line 26, ../scss/main.scss */
 #main {
   margin: 0 auto;
 }
 
-/* line 27, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 #white {
   color: #fff;
   font-family: 'BebasNeue', sans-serif;
   border-right: 1px solid #fff;
 }
 
-/* line 33, ../scss/main.scss */
-#main-color {
-  background-color: #f2f2f2;
-}
-
-/* line 37, ../scss/main.scss */
+/* line 36, ../scss/main.scss */
 #turquoise {
   color: #46b29d;
   font-family: 'BebasNeue', sans-serif;
 }
 
-/* line 42, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
 #infotext {
-  font-family: Helvetica, sans-serif;
   font-size: 14pt;
 }
 
-/* line 47, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
+#iframe-border {
+  border-left: 10px solid #46b29d;
+  border-right: 10px solid #46b29d;
+}
+
+/* line 50, ../scss/main.scss */
 body {
   font-family: Helvetica, sans-serif;
   font-size: 13pt;
+  background-color: #f2f2f2;
 }
 
-/* line 52, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 input[type=text] {
   width: 100%;
   border: 1px solid #e0dcda;
@@ -51,34 +52,34 @@ input[type=text] {
   box-sizing: border-box;
   transition: .3s;
 }
-/* line 60, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 input[type=text]:focus {
   border-color: #46b29d;
   box-shadow: 0 0 4px 0 #46b29d;
 }
 
-/* line 65, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .inputWithIcon {
   position: relative;
 }
-/* line 67, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 .inputWithIcon input[type=text] {
   padding-left: 40px;
 }
-/* line 69, ../scss/main.scss */
+/* line 74, ../scss/main.scss */
 .inputWithIcon input[type=text]:focus + i {
   color: #46b29d;
 }
-/* line 73, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 .inputWithIcon i {
   position: absolute;
   left: 0;
-  padding: 13px 12px;
+  padding: 10px 7px;
   color: #e0dcda;
   transition: .3s;
 }
 
-/* line 82, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 input[type=date] {
   width: 100%;
   border: 1px solid #e0dcda;
@@ -88,34 +89,34 @@ input[type=date] {
   box-sizing: border-box;
   transition: .3s;
 }
-/* line 90, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 input[type=date]:focus {
   border-color: #46b29d;
   box-shadow: 0 0 4px 0 #46b29d;
 }
 
-/* line 95, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 .inputWithIcon {
   position: relative;
 }
-/* line 97, ../scss/main.scss */
+/* line 102, ../scss/main.scss */
 .inputWithIcon input[type=date] {
   padding-left: 40px;
 }
-/* line 99, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 .inputWithIcon input[type=date]:focus + i {
   color: #46b29d;
 }
-/* line 103, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
 .inputWithIcon i {
   position: absolute;
   left: 0;
-  padding: 13px 12px;
+  padding: 10px 8px;
   color: #e0dcda;
   transition: .3s;
 }
 
-/* line 112, ../scss/main.scss */
+/* line 117, ../scss/main.scss */
 input[type=password] {
   width: 100%;
   border: 1px solid #e0dcda;
@@ -125,35 +126,35 @@ input[type=password] {
   box-sizing: border-box;
   transition: .3s;
 }
-/* line 120, ../scss/main.scss */
+/* line 125, ../scss/main.scss */
 input[type=password]:focus {
   border-color: #46b29d;
   box-shadow: 0 0 4px 0 #46b29d;
 }
 
-/* line 125, ../scss/main.scss */
+/* line 130, ../scss/main.scss */
 .inputWithIcon {
   position: relative;
 }
-/* line 127, ../scss/main.scss */
+/* line 132, ../scss/main.scss */
 .inputWithIcon input[type=password] {
   padding-left: 40px;
 }
-/* line 129, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .inputWithIcon input[type=password]:focus + i {
   color: #46b29d;
 }
-/* line 133, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 .inputWithIcon i {
   position: absolute;
   left: 0;
-  padding: 13px 12px;
+  padding: 10px 8px;
   margin: -40px 0 0 0;
   color: #e0dcda;
   transition: .3s;
 }
 
-/* line 143, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 input[type=email] {
   width: 100%;
   border: 1px solid #e0dcda;
@@ -163,48 +164,128 @@ input[type=email] {
   box-sizing: border-box;
   transition: .3s;
 }
-/* line 151, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 input[type=email]:focus {
   border-color: #46b29d;
   box-shadow: 0 0 4px 0 #46b29d;
 }
 
-/* line 156, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 .inputWithIcon {
   position: relative;
 }
-/* line 158, ../scss/main.scss */
+/* line 163, ../scss/main.scss */
 .inputWithIcon input[type=email] {
   padding-left: 40px;
 }
-/* line 160, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 .inputWithIcon input[type=email]:focus + i {
   color: #46b29d;
 }
-/* line 164, ../scss/main.scss */
+/* line 169, ../scss/main.scss */
 .inputWithIcon i {
   position: absolute;
   left: 0;
-  padding: 13px 12px;
+  padding: 10px 8px;
   margin: -40px 0 0 0;
   color: #e0dcda;
   transition: .3s;
 }
 
-/* line 174, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
+.button-tiere {
+  background: #000;
+  opacity: 0.8;
+  padding: 6px 22px;
+  -moz-box-shadow: inset 0 0 1px #000;
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  color: #fff;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+/* line 193, ../scss/main.scss */
+.btn-group a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 199, ../scss/main.scss */
+.panel > .panel-heading {
+  background-color: #000;
+  opacity: 0.8;
+  font-family: 'BebasNeue', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+/* line 205, ../scss/main.scss */
+.panel > .panel-heading h4 {
+  font-size: 29px;
+  color: #46b29d;
+}
+
+/*https://github.com/IanLunn/Hover*/
+/* line 212, ../scss/main.scss */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 223, ../scss/main.scss */
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #46b29d;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 243, ../scss/main.scss */
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+/* line 246, ../scss/main.scss */
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* line 252, ../scss/main.scss */
 h1 {
   font-family: 'BebasNeue', sans-serif;
   font-size: 25pt;
   color: #000;
   padding: 0;
+  word-spacing: 8px;
 }
 
-/* line 181, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 #h1-modified {
   margin: 20px 0 20px -13px;
 }
 
-/* line 185, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 h2 {
   font-family: Helvetica, sans-serif;
   font-size: 12pt;
@@ -213,78 +294,116 @@ h2 {
   padding: 0;
 }
 
-/* line 193, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #e0dcda;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 281, ../scss/main.scss */
+.bar {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 15px solid #000;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 291, ../scss/main.scss */
+.animal-data li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 0.1px;
+}
+/* line 298, ../scss/main.scss */
+.animal-data p {
+  line-height: 1.1;
+}
+
+/* line 303, ../scss/main.scss */
 #login-text {
   font-family: Helvetica, sans-serif;
   font-size: 12pt;
   margin: 0 0 0 -13px;
 }
 
-/* line 199, ../scss/main.scss */
+/* line 309, ../scss/main.scss */
 .button {
-  background: #46b29d;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
   padding: 6px 22px;
   border: 1px solid #000;
-  -moz-box-shadow: inset 0 0 3px #000;
-  -webkit-box-shadow: inset 0 0 3px #000;
-  box-shadow: inset 0 0 3px #000;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-size: 20px;
   font-family: Helvetica, sans-serif;
   vertical-align: middle;
 }
+/* line 320, ../scss/main.scss */
+.button:hover {
+  background-color: #46b29d;
+  color: #fff;
+}
 
-/* line 213, ../scss/main.scss */
+/* line 326, ../scss/main.scss */
 hr {
   margin: 0 0 12px 0;
 }
 
-/* line 217, ../scss/main.scss */
+/* line 330, ../scss/main.scss */
 .navbar {
   margin: 0 auto;
   background-color: #e0dcda;
   font-family: 'BebasNeue', sans-serif;
   border: none;
 }
-/* line 223, ../scss/main.scss */
+/* line 336, ../scss/main.scss */
 .navbar .navbar-nav {
   width: 100%;
   text-align: center;
 }
-/* line 226, ../scss/main.scss */
+/* line 339, ../scss/main.scss */
 .navbar .navbar-nav > li {
   float: none;
   display: inline-block;
   border-right: 1px solid #adadad;
 }
-/* line 231, ../scss/main.scss */
+/* line 344, ../scss/main.scss */
 .navbar .navbar-nav > li:last-child {
   border-right: none;
 }
-/* line 234, ../scss/main.scss */
+/* line 347, ../scss/main.scss */
 .navbar .navbar-nav > li > a {
   color: #000;
 }
-/* line 238, ../scss/main.scss */
+/* line 351, ../scss/main.scss */
 .navbar .navbar-nav .navbar-right {
   float: right;
 }
-/* line 243, ../scss/main.scss */
+/* line 356, ../scss/main.scss */
 .navbar .navbar-default {
   width: 100%;
   text-align: center;
 }
-/* line 246, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 .navbar .navbar-default > li {
   float: none;
   display: inline-block;
 }
-/* line 251, ../scss/main.scss */
+/* line 364, ../scss/main.scss */
 .navbar .navbar-default > .active {
   background-color: #f2f2f2;
 }
 
-/* line 257, ../scss/main.scss */
+/* line 370, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -292,45 +411,45 @@ hr {
   color: #e37b40;
 }
 
-/* line 264, ../scss/main.scss */
+/* line 377, ../scss/main.scss */
 header {
   background-color: #000;
   font-family: 'BebasNeue', sans-serif;
 }
-/* line 268, ../scss/main.scss */
+/* line 381, ../scss/main.scss */
 header .inner {
   margin: 0 auto;
   width: 100%;
   display: block;
 }
-/* line 275, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 header .btn {
   background-color: #000;
   border: none;
   font-size: 11.5pt;
   float: right;
 }
-/* line 280, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
 header .btn:hover {
   background-color: #000;
 }
 
-/* line 286, ../scss/main.scss */
+/* line 399, ../scss/main.scss */
 .toast-success {
   background-color: #dff0d8;
 }
 
-/* line 290, ../scss/main.scss */
+/* line 403, ../scss/main.scss */
 .toast-error {
   background-color: #f2dede;
 }
 
-/* line 294, ../scss/main.scss */
+/* line 407, ../scss/main.scss */
 .full {
   width: 100%;
 }
 
-/* line 298, ../scss/main.scss */
+/* line 411, ../scss/main.scss */
 .gap {
   height: 30px;
   width: 100%;
@@ -338,7 +457,7 @@ header .btn:hover {
   display: block;
 }
 
-/* line 305, ../scss/main.scss */
+/* line 418, ../scss/main.scss */
 footer {
   background: #000;
   font-family: 'BebasNeue', sans-serif;
@@ -349,23 +468,23 @@ footer {
   position: absolute;
   text-align: center;
 }
-/* line 315, ../scss/main.scss */
+/* line 428, ../scss/main.scss */
 footer div.navbar-nav {
   margin-top: 40px;
   float: none;
   text-align: center;
 }
-/* line 321, ../scss/main.scss */
+/* line 434, ../scss/main.scss */
 footer ul {
   list-style-type: none;
   padding: auto;
 }
-/* line 325, ../scss/main.scss */
+/* line 438, ../scss/main.scss */
 footer ul #social {
   display: flex;
   align-items: center;
 }
-/* line 331, ../scss/main.scss */
+/* line 444, ../scss/main.scss */
 footer li {
   float: left;
   padding-left: 100px;
@@ -374,7 +493,7 @@ footer li {
   height: auto;
   display: inline-block;
 }
-/* line 338, ../scss/main.scss */
+/* line 451, ../scss/main.scss */
 footer li a {
   color: #fff;
   font-family: 'BebasNeue', sans-serif;
@@ -383,13 +502,13 @@ footer li a {
   text-align: center;
   overflow: hidden;
 }
-/* line 345, ../scss/main.scss */
+/* line 458, ../scss/main.scss */
 footer li a:hover {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 353, ../scss/main.scss */
+/* line 466, ../scss/main.scss */
 .supportLi h4 {
   font-size: 20px;
   font-weight: lighter;
@@ -398,7 +517,7 @@ footer li a:hover {
   padding-bottom: 0;
 }
 
-/* line 361, ../scss/main.scss */
+/* line 474, ../scss/main.scss */
 .newsletter-box input#appendedInputButton {
   background: #FFFFFF;
   display: inline-block;
@@ -408,7 +527,7 @@ footer li a:hover {
   width: 100%;
 }
 
-/* line 370, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 .newsletter-box .btn {
   border: medium none;
   -webkit-border-radius: 3px;
@@ -423,18 +542,18 @@ footer li a:hover {
   color: #fff;
 }
 
-/* line 384, ../scss/main.scss */
+/* line 497, ../scss/main.scss */
 .newsletter-box {
   overflow: hidden;
 }
 
-/* line 388, ../scss/main.scss */
+/* line 501, ../scss/main.scss */
 .bg-gray {
   background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
   box-shadow: 0 1px 0 #B4B3B3;
 }
 
-/* line 393, ../scss/main.scss */
+/* line 506, ../scss/main.scss */
 .social li {
   background: none repeat scroll 0 0 #B5B5B5;
   border: 2px solid #B5B5B5;
@@ -457,7 +576,7 @@ footer li a:hover {
   -o-transition: all 0.5s ease 0s;
 }
 
-/* line 415, ../scss/main.scss */
+/* line 528, ../scss/main.scss */
 .social li:hover {
   transform: scale(1.15) rotate(360deg);
   -webkit-transform: scale(1.1) rotate(360deg);
@@ -466,25 +585,25 @@ footer li a:hover {
   -o-transform: scale(1.1) rotate(360deg);
 }
 
-/* line 423, ../scss/main.scss */
+/* line 536, ../scss/main.scss */
 .social li a {
   color: #EDEFF1;
 }
 
-/* line 427, ../scss/main.scss */
+/* line 540, ../scss/main.scss */
 .social li:hover {
   border: 2px solid #2c3e50;
   background: #2c3e50;
 }
 
-/* line 432, ../scss/main.scss */
+/* line 545, ../scss/main.scss */
 .social li a i {
   font-size: 16px;
   margin: 0 0 0 5px;
   color: #EDEFF1 !important;
 }
 
-/* line 438, ../scss/main.scss */
+/* line 551, ../scss/main.scss */
 .footer-bottom {
   background: #E3E3E3;
   border-top: 1px solid #DDDDDD;
@@ -492,17 +611,17 @@ footer li a:hover {
   padding-bottom: 10px;
 }
 
-/* line 445, ../scss/main.scss */
+/* line 558, ../scss/main.scss */
 .footer-bottom p.pull-left {
   padding-top: 6px;
 }
 
-/* line 449, ../scss/main.scss */
+/* line 562, ../scss/main.scss */
 .payments {
   font-size: 1.5em;
 }
 
-/* line 453, ../scss/main.scss */
+/* line 566, ../scss/main.scss */
 .wrapper.login {
   width: 350px;
 }

@@ -77,3 +77,4 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- /.navbar -->
+    <div id="main-color"> <br><br> </div>

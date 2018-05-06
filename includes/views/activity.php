@@ -4,13 +4,13 @@ echo $this->header;
 
 ?>
 
-    <div class="container-fluid" id="main-color">
+    <div class="container-fluid">
 
             <!-- Reihe für immer zentrierte Überschrift -->
             <div class="row">
                 <div class="col-xs-0 col-md-1 col-lg-2"></div>
                 <div class="col-xs-12 col-md-10 col-lg-8">
-                    <h1>Aktivitaet hinzufuegen</h1>
+                    <h1 id="h1-modified">Aktivitaet hinzufuegen</h1>
                 </div>
                 <div class="col-xs-0 col-md-1 col-lg-2"></div>
             </div>
@@ -59,7 +59,7 @@ echo $this->header;
                         </div>-->
 
                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10 col-xs-12 col-md-2">
+                            <div class="col-sm-offset-2 col-sm-pull-2 col-xs-12 col-md-pull-2">
                                 <button class="button" type="submit">
                                     Hinzufügen
                                 </button>

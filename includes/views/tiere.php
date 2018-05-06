@@ -1,15 +1,6 @@
 <?php echo $this->header;?>
 
-<div class="container-fluid" id="main-color">
-<!-- Reihe für immer zentrierte Überschrift -->
-<div class="row">
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-    <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
-        <h1>Aktuell untergebrachte Tiere</h1>
-        <hr/>
-    </div>
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-</div>
+<div class="container-fluid">
 <div class="row">
 
     <?php foreach($this->tiere as $tier):
@@ -32,7 +23,7 @@
             <!-- Neue Row für Unterteilung des Panels in 50% Bild und 50% Text -->
                 <div class="row">
                     <!-- Bild -->
-                    <div class="col-xs-6">                        
+                    <div class="col-xs-6">
                         <?php if($tier->bildlink != ''):?>
                             <img src="<?php echo $tier->bildlink; ?>" alt="<?php echo $tier->name; ?>" class="img-rounded img-responsive" />
                         <?php else: ?>
@@ -54,7 +45,7 @@
                             <?php endif?>
                         <p>Geboren am: <?php echo $gebdat->format('d.m.Y');?></p>
                         <div class="btn-group">
-                            <a href="tierprofil?id=<?php echo $tier->tierid; ?>" class="btn btn-default">
+                            <a href="tierprofil?id=<?php echo $tier->tierid; ?>" class="button-tiere hvr-sweep-to-right">
                                 <span><i class="glyphicon glyphicon-share-alt"></i> Profil</span>
                             </a>
                         </div>

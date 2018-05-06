@@ -32,21 +32,30 @@ echo $this->header;
             ?>
 
             <div class="col-xs-8 col-md-4">
-                <div class="thumbnail">
+                <div class="img-thumbnail img-responsive pull-right">
                     <img src=" <?php echo $this->tierObj->bildlink ?>" alt="" style="width:100%">
-                    <div class="caption">
-                        <p><?php echo $this->tierObj->name; ?>, <?php echo $age." ".$zeiteinheit; ?> alt</p>
-                    </div>
                 </div>
             </div>
             <div class="col-xs-0 col-md-8">
-                <h2><?php echo $this->tierObj->name ?>'s Geschichte</h2>
+                <h1>Stammdaten</h1>
+                <hr class="bar">
+                <ul class="animal-data">
+                    <li>Name: </li> <p><?php echo $this->tierObj->name; ?></p>
+                    <li>Alter: </li> <p><?php echo $age." ".$zeiteinheit; ?></p>
+                    <li>Geburtsdatum: </li> <p><?php echo $gebdat->format('d.m.Y');?></p>
+                    <li>Geschlecht: </li> <p><?php echo $geschlecht;?> <?php if($tier->gbezeichnung=='männlich'):?><i class ="fas fa-mars"></i><?php else:?><i class ="fas fa-venus"></i><?php endif;?></p>
+                    <li>Rasse: </li> <p><?php echo $tier->rasse; ?></p>
+                <br/><br/>
+                    <li><?php echo $this->tierObj->name ?>s Geschichte</li>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </ul>
             </div>
-        </div>
 
+        </div>
+        <br/>
+        <hr style="border-top: 2px solid black"/>
             <div class="col-xs-0 col-md-8">
-            <span id="login-text"><a style="font-weight: bold"href="activity">Aktivität hinzufügen</a> </span><hr>
+            <span id="login-text"><a style="font-weight: bold"href="activity">Aktivität hinzufügen</a> </span>
 
 
         <!-- Übersicht Aktivitäten -->

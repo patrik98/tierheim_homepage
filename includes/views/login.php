@@ -4,7 +4,7 @@ echo $this->header;
 
 ?>
 
-<div class="container-fluid" id="main-color">
+<div class="container-fluid">
     <!-- Reihe für immer zentrierte Überschrift -->
     <div class="row">
         <div class="col-xs-0 col-md-1 col-lg-2"></div>
@@ -21,7 +21,7 @@ echo $this->header;
         <div class="col-xs-12 col-md-10 col-lg-8">
             <span id="login-text">Sie besitzen noch keinen Account? Dann können Sie sich <a style="font-weight: bold"
                                                                                             href="register">hier registrieren.</a> </span>
-            <hr>
+            <br/><br/>
 
             <form method="post" class="form-horizontal" action="login">
 
@@ -55,7 +55,7 @@ echo $this->header;
         </div>
 
         <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10 col-xs-12 col-md-2">
+            <div class="col-sm-offset-2 col-sm-pull-2 col-xs-12 col-md-offset-4">
                 <button class="button" type="submit"> Login
                 </button>
             </div>
