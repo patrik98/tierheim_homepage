@@ -29,18 +29,13 @@ class TierprofilController extends Controller
     {
         $this->view->title = "Tierprofil";
         $this->view->username = $this->user->username;
+        $this->view->id = $this->user->id;
 
-        if(isset($_GET['id']) && $_GET['id'] != '')
-        {
-            //passt tier holen
-            $tierObj = TierModel::getTierById($_GET['id']);
+        if (isset($_GET['id']) && $_GET['id'] != '') {
+            $this->view->tierObj = TierModel::getTierById($_GET['id']);
+        }
 
-        }
-        else
-        {
-            //fehlermeldung kein tier übergeben
-        }
-        //$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
     }
+
 
 }
