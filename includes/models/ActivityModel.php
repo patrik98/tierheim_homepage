@@ -33,9 +33,10 @@ class ActivityModel
 
         $termin = $db->escapeString($data['termin']);
         $bezeichnung = $db->escapeString($data['bezeichnung']);
-        $tier = $db->escapeString($data['tier']);
+        $tier = $data['tier'];
+        $nutzer = $data['nutzerid'];
 
-        $sql = "INSERT INTO `map_aktivitaet`(`termin`, `bezeichnung`, `tier`) VALUES('".$termin."','".$bezeichnung."','".$tier."')";
+        $sql = "INSERT INTO map_aktivitaet(termin, bezeichnung, tier, nutzer) VALUES('".$termin."','".$bezeichnung."','".$tier."','".$nutzer."')";
         $db->query($sql);
 
     }

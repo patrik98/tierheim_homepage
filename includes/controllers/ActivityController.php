@@ -29,8 +29,6 @@ class ActivityController extends Controller{
     {
         $this->view->title = "Aktivität";
 
-        User::getById($this->user->id);
-
         $this->view->username = $this->user->username;
         $this->view->userid = $this->user->id;
 
@@ -45,7 +43,7 @@ class ActivityController extends Controller{
     private function checkForActivityPost()
     {
         if (!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'activity') {
-            $requiredFields = array('tier','termin', 'activity');
+            $requiredFields = array('tier','termin', 'bezeichnung','nutzerid');
 
             $error = false;
             $errorFields = array();
@@ -62,13 +60,18 @@ class ActivityController extends Controller{
                 $termin = $_POST['termin'];
                 $activity = $_POST['bezeichnung'];
                 $tier = $_POST['tier'];
+                $nutzer = $_POST['nutzerid'];
 
             }
 
             if (!$error) {
-                ActivityModel::createNewActivity(array('termin'=> $termin, 'bezeichnung'=> $activity, 'tier'=> $tier));
+                ActivityModel::createNewActivity(array('termin'=> $termin, 'bezeichnung'=> $activity, 'tier'=> $tier, 'nutzerid'=> $nutzer));
 
                 $this->view->ActivityAdded = true;
+            }
+
+            else {
+                $errorFields['bezeichnung'] = "Fehler";
             }
         }
 
