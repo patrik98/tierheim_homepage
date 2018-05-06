@@ -21,7 +21,7 @@ echo $this->header;
             <div class="row">
                 <div class="col-xs-0 col-md-1 col-lg-2"></div>
                 <div class="col-xs-12 col-md-10 col-lg-8">
-                    <h1>Registrieren</h1>
+                    <h1 id="h1-modified">Registrieren</h1>
                 </div>
                 <div class="col-xs-0 col-md-1 col-lg-2"></div>
             </div>
@@ -74,7 +74,7 @@ echo $this->header;
 
                         <div class="row">
                             <div class="col-xs-12 col-md-10 col-lg-8">
-                                <h1 style="font-size: 18pt">Persoenliche Daten</h1>
+                                <h1 id="h1-modified" style="font-size: 18pt">Persoenliche Daten</h1>
                             </div>
                         </div>
 

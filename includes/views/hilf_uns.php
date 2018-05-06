@@ -16,7 +16,7 @@
         <div class="col-xs-12 col-md-10 col-lg-7">
                 <div class="row">
                     <div class="col-xs-7">
-                        <p id="infotext"> Es gibt viele Wege, wie Sie uns tatkräftig unterstützen können. Eine <a href="register" style="font-weight: bold"> Mitgliedschaft </a> auf
+                        <p> Es gibt viele Wege, wie Sie uns tatkräftig unterstützen können. Eine <a href="register" style="font-weight: bold"> Mitgliedschaft </a> auf
                             unserer Website ermöglicht Ihnen, mit unsereren Tieren verschiedene Aktivitäten durchzuführen - sei es das Gassi gehen mit einen unserer
                             liebenswürdigen Hunde oder das bloße Kuscheln unserer streichelbedürftigen Katzen - wir sind für jede Unterstützung sehr dankbar. Falls
                             Ihnen dies dennoch zu wenig sein sollte: Noch heute können Sie mit einem kleinen Geldbetrag dazu beitragen, Tierleben zu retten. Ohne Ihre Hilfe
