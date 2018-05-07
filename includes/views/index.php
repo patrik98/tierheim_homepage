@@ -18,17 +18,12 @@
             <div class="col-xs-0 col-md-1 col-lg-2"></div>
             <div class="col-xs-12 col-md-10 col-lg-8">
                     <img class="img-responsive img-rounded pull-left" style="margin-right: 15px" src="images/tierheim.png"/>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita 
-                    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
-                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
-                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure 
-                    olor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros 
-                    et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla 
-                    facilisi. Lorem ipsum dolor sit amet
+                    <p> Seit dem August 1957 sehen wir, die Mitglieder des Ti(e)roler Tierschutzvereins (kurz: TTV), die Rettung und Verpflegung der Tiere in Not
+                        als unsere Bestimmung. Zehntausende von Tieren konnte bislang in unserer Obhut geholfen werden, täglich finden mit unserer Hilfe Tiere
+                        ein neues Zuhause. Unser Tierschutzverein beherbergt tagtäglich an die 100 tierische Schützlinge, vom verletzten Wildtier bis zu Katze, Hund oder Kleintier.
+                        Wir setzen einen Schwerpunkt auf die Beschäftigung unserer geliebten Vierbeiner - Menschen mit dem Herzen am rechten Fleck können sich auf dem dementsprechenden
+                        <a href="tiere" style="font-weight: bold">Tierprofil</a> für Aktivitäten eintragen, sei es das Gassi gehen mit einen unserer herumtobenden Hunde oder alleine das Streicheln unserer Katzen - für jede Hilfe sind
+                        wir sehr dankbar. Falls Sie weitere Fragen haben, zögern Sie nicht, uns zu <a href="kontakt">kontaktieren</a>.
                     </p>
                     </div>
             <div class="col-xs-0 col-md-1 col-lg-2"></div>
