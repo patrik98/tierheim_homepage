@@ -5,14 +5,17 @@
     <!-- Character-Set -->
     <meta charset="UTF-8">
 
-    <!-- Änderung des angezeigten Tab-Titels je nach Seite -->
+    <!-- Festlegen des Viewports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Ausgabe des angezeigten Tab-Titels je nach Seite -->
     <title>
-        <?php echo $this->title; ?></title>
+        <?php echo $this->title; ?>
+    </title>
 
     <!-- Bootstrap CSS & JS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -21,7 +24,6 @@
 </head>
 
 <body>
-
     <header>
         <!-- Ein-/Ausblenden von Registrieren, Login und Logout-Buttons wenn angemeldet oder nicht -->
         <?php if(LOGGED_IN==false):?>
@@ -41,6 +43,7 @@
         <?php endif; ?>
     </header>
 
+    <!-- Navigationsleiste -->
     <nav class="navbar navbar-default" id="main">
         <div class="container-fluid">
             <!-- Burger-Button bei mobile Ansicht -->
@@ -70,11 +73,9 @@
                         <?php endif; ?>><a href="kontakt">Kontakt</a>
                     </li>
                 </ul>
-
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
     <!-- /.navbar -->
-    <div id="main-color"> <br><br> </div>
