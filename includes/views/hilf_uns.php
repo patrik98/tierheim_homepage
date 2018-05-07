@@ -20,7 +20,7 @@
                             Ihnen dies dennoch zu wenig sein sollte: Noch heute können Sie mit einem kleinen Geldbetrag dazu beitragen, Tierleben zu retten. Ohne Ihre Hilfe
                             ist es uns nicht möglich, alle Tiere zu verpflegen. Ohne Sie schaffen wir es nicht, unser Heim auszubauen, um weitere Tiere aufzunehmen
                             und sie von der Gefahr, der sie vorher ausgesetzt waren, zu befreien. In der Vergangenheit konnten wir bereits durch die großzügige Unterstützung
-                            unserer Spenderinnen und Spender tägliche Futterkosten, Verpflegung und Bereitstellen von Räumlichkeiten für unsere Schutztieren ermöglichen.
+                            unserer Spenderinnen und Spender tägliche Futterkosten, Verpflegung und Bereitstellen von Räumlichkeiten für unsere Schutztiere ermöglichen.
                             Kein Betrag ist zu wenig, keine Hilfe zu dürftig - wir freuen uns über jede einzelne Spende und Hilfe.</p></div>
                     <div class="col xs-5"><img class="img-responsive img-rounded" src="images/hund_hilfmit.png" /></div>
                 </div>

@@ -19,9 +19,14 @@ $white: #fff;
 $orange: #e37b40;
 $nav-color: #e0dcda;
 $main-color: #f2f2f2;
+$link-color: #0098C9;
+$font: 'BebasNeue', sans-serif;
+$main-font: Helvetica, sans-serif;
 
-
-
+$margin-input: 8px 0;
+$border-input: 1px solid $nav-color;
+$shadow-input: 0 0 4px 0 $turquoise;
+$padding-left-input: 40px;
 
 #main {
   margin: 0 auto;
@@ -29,13 +34,13 @@ $main-color: #f2f2f2;
 
 #white {
   color: $white;
-  font-family: 'BebasNeue', sans-serif;
+  font-family: $font;
   border-right: 1px solid $white;
 }
 
 #turquoise {
   color: $turquoise;
-  font-family: 'BebasNeue', sans-serif;
+  font-family: $font;
 }
 
 #infotext {
@@ -48,118 +53,87 @@ $main-color: #f2f2f2;
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: $main-font;
   font-size: 13pt;
   background-color: $main-color;
 }
 
 input[type=text]{
   width:100%;
-  border:1px solid $nav-color;
+  border:$border-input;
   border-radius:4px;
-  margin: 4px 0;
-  padding: 5px;
+  margin: $margin-input;
+  padding: 8px;
   box-sizing:border-box;
   transition:.3s;
   &:focus{
     border-color: $turquoise;
-    box-shadow: 0 0 4px 0 $turquoise;
+    box-shadow: $shadow-input;
+  }
+}
+
+input[type=date]{
+  width:100%;
+  border:$border-input;
+  border-radius:4px;
+  margin: $margin-input;
+  padding: 8px;
+  box-sizing:border-box;
+  transition:.3s;
+  &:focus{
+    border-color: $turquoise;
+    box-shadow: $shadow-input;
+  }
+}
+
+input[type=password]{
+  width:100%;
+  border:$border-input;
+  border-radius:4px;
+  margin: $margin-input;
+  padding: 8px;
+  box-sizing:border-box;
+  transition:.3s;
+  &:focus{
+    border-color: $turquoise;
+    box-shadow: $shadow-input;
+  }
+}
+
+input[type=email]{
+  width:100%;
+  border:$border-input;
+  border-radius:4px;
+  margin: $margin-input;
+  padding: 8px;
+  box-sizing:border-box;
+  transition:.3s;
+  &:focus{
+    border-color: $turquoise;
+    box-shadow: $shadow-input;
   }
 }
 
 .inputWithIcon{
   position:relative;
   input[type=text]{
-    padding-left:40px;
+    padding-left:$padding-left-input;
     &:focus + i{
       color:$turquoise;
     }
   }
-  i{
-    position:absolute;
-    left:0;
-    padding: 10px 7px;
-    color: $nav-color;
-    transition:.3s;
-  }
-}
-
-input[type=date]{
-  width:100%;
-  border:1px solid $nav-color;
-  border-radius:4px;
-  margin: 4px 0;
-  padding: 5px;
-  box-sizing:border-box;
-  transition:.3s;
-  &:focus{
-    border-color: $turquoise;
-    box-shadow: 0 0 4px 0 $turquoise;
-  }
-}
-.inputWithIcon{
-  position:relative;
   input[type=date]{
-    padding-left:40px;
+    padding-left:$padding-left-input;
     &:focus + i{
       color:$turquoise;
     }
   }
-  i{
-    position:absolute;
-    left:0;
-    padding: 10px 8px;
-    color: $nav-color;
-    transition:.3s;
-  }
-}
-
-input[type=password]{
-  width:100%;
-  border:1px solid $nav-color;
-  border-radius:4px;
-  margin: 4px 0;
-  padding: 5px;
-  box-sizing:border-box;
-  transition:.3s;
-  &:focus{
-    border-color: $turquoise;
-    box-shadow: 0 0 4px 0 $turquoise;
-  }
-}
-.inputWithIcon{
-  position:relative;
-  input[type=password]{
-    padding-left:40px;
-    &:focus + i{
-      color:$turquoise;
+  input[type=password] {
+    padding-left: 40px;
+    &:focus + i {
+      color: $turquoise;
     }
   }
-  i{
-    position:absolute;
-    left:0;
-    padding: 10px 8px;
-    margin: -40px 0 0 0;
-    color: $nav-color;
-    transition:.3s;
-  }
-}
-
-input[type=email]{
-  width:100%;
-  border:1px solid $nav-color;
-  border-radius:4px;
-  margin: 4px 0;
-  padding: 5px;
-  box-sizing:border-box;
-  transition:.3s;
-  &:focus{
-    border-color: $turquoise;
-    box-shadow: 0 0 4px 0 $turquoise;
-  }
-}
-.inputWithIcon{
-  position:relative;
   input[type=email]{
     padding-left:40px;
     &:focus + i{
@@ -169,7 +143,7 @@ input[type=email]{
   i{
     position:absolute;
     left:0;
-    padding: 10px 8px;
+    padding: 8px 8px;
     margin: -40px 0 0 0;
     color: $nav-color;
     transition:.3s;
@@ -185,7 +159,7 @@ input[type=email]{
   box-shadow:         inset 0 0 1px $black;
   color: $white;
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
+  font-family: $main-font;
   vertical-align: middle;
 }
 
@@ -199,7 +173,7 @@ input[type=email]{
 .panel > .panel-heading {
   background-color: $black;
   opacity: 0.8;
-  font-family: 'BebasNeue', sans-serif;
+  font-family: $font;
   font-weight: bolder;
   text-align: center;
   h4 {
@@ -250,7 +224,7 @@ input[type=email]{
 }
 
 h1 {
-  font-family: 'BebasNeue', sans-serif;
+  font-family: $font;
   font-size: 25pt;
   color: $black;
   padding: 0;
@@ -262,7 +236,7 @@ h1 {
 }
 
 h2 {
-  font-family: Helvetica, sans-serif;
+  font-family: $main-font;
   font-size: 12pt;
   font-weight: bold;
   margin: 0 0 0 -13px;
@@ -301,7 +275,7 @@ hr {
 }
 
 #login-text {
-  font-family: Helvetica, sans-serif;
+  font-family: $main-font;
   font-size: 12pt;
   margin: 0 0 0 -13px;
 }
@@ -311,15 +285,24 @@ hr {
   transition-duration: 0.4s;
   padding: 6px 22px;
   border: 1px solid $black;
-
   background-color: $black;
   color: $white;
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
+  font-family: $main-font;
   vertical-align: middle;
+
   &:hover {
     background-color: $turquoise;
     color: $white;
+    text-decoration: none;
+  }
+}
+
+a {
+  font-weight: bold;
+  color: $link-color;
+  &:hover {
+    color: $turquoise;
   }
 }
 
@@ -330,7 +313,7 @@ hr {
 .navbar {
   margin: 0 auto;
   background-color: $nav-color;
-  font-family: 'BebasNeue', sans-serif;
+  font-family: $font;
   border: none;
 
   .navbar-nav {
@@ -376,7 +359,7 @@ hr {
 
 header {
   background-color: $black;
-  font-family: 'BebasNeue', sans-serif;
+  font-family: $font;
 
   .inner {
     margin: 0 auto;
@@ -417,7 +400,7 @@ header {
 
 footer {
   background: $black;
-  font-family: 'BebasNeue', sans-serif;
+  font-family: $font;
   padding: 40px;
   min-height: auto;
   width: 100%;
@@ -445,12 +428,12 @@ footer {
     float: left;
     padding-left: 100px;
     color: $white;
-    font-family: 'BebasNeue', sans-serif;
+    font-family: $font;
     height: auto;
     display: inline-block;
     a {
       color: $white;
-      font-family: 'BebasNeue', sans-serif;
+      font-family: $font;
       font-size: 12pt;
       display: block;
       text-align: center;
@@ -497,73 +480,3 @@ footer {
 .newsletter-box {
   overflow: hidden;
 }
-
-.bg-gray {
-  background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
-  box-shadow: 0 1px 0 #B4B3B3;
-}
-
-.social li {
-  background: none repeat scroll 0 0 #B5B5B5;
-  border: 2px solid #B5B5B5;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  float: left;
-  height: 36px;
-  line-height: 36px;
-  margin: 0 8px 0 0;
-  padding: 0;
-  text-align: center;
-  width: 36px;
-  transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  -ms-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-}
-
-.social li:hover {
-  transform: scale(1.15) rotate(360deg);
-  -webkit-transform: scale(1.1) rotate(360deg);
-  -moz-transform: scale(1.1) rotate(360deg);
-  -ms-transform: scale(1.1) rotate(360deg);
-  -o-transform: scale(1.1) rotate(360deg);
-}
-
-.social li a {
-  color: #EDEFF1;
-}
-
-.social li:hover {
-  border: 2px solid #2c3e50;
-  background: #2c3e50;
-}
-
-.social li a i {
-  font-size: 16px;
-  margin: 0 0 0 5px;
-  color: #EDEFF1 !important;
-}
-
-.footer-bottom {
-  background: #E3E3E3;
-  border-top: 1px solid #DDDDDD;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.footer-bottom p.pull-left {
-  padding-top: 6px;
-}
-
-.payments {
-  font-size: 1.5em;
-}
-
-.wrapper.login {
-  width: 350px;
-}
-

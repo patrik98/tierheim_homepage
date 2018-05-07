@@ -11,17 +11,14 @@
                                                          style="margin-right: 25px"/></div>
                     <div class="col-md-offset-5 col-xs-push-10">
                         <p>
-                        <h1 style="margin-top: 0"> Informationen</h1>Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                        kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem
-                        vel eum iriure dolor in hendre </p></div>
+                        <h1 style="margin-top: 0"> Informationen</h1>
+                        Seit dem August 1957 sehen wir, die Mitglieder des Ti(e)roler Tierschutzvereins (kurz: TTV), die Rettung und Verpflegung der Tiere in Not
+                        als unsere Bestimmung. Zehntausende von Tieren konnte bislang in unserer Obhut geholfen werden, täglich finden mit unserer Hilfe Tiere
+                        ein neues Zuhause. Unser Tierschutzverein beherbergt tagtäglich an die 100 tierische Schützlinge, vom verletzten Wildtier bis zu Katze, Hund oder Kleintier.
+                        Wir setzen einen Schwerpunkt auf die Beschäftigung unserer geliebten Vierbeiner - Menschen mit dem Herzen am rechten Fleck können sich auf dem dementsprechenden
+                        <a href="tiere" style="font-weight: bold">Tierprofil</a> für Aktivitäten eintragen, sei es das Gassi gehen mit einen unserer herumtobenden Hunde oder alleine das Streicheln unserer Katzen - für jede Hilfe sind
+                        wir sehr dankbar. Falls Sie weitere Fragen haben, zögern Sie nicht, uns zu <a href="kontakt">kontaktieren</a>.
+                        </p></div>
                 </div>
             </div>
             <div class="col-xs-0 col-md-1 col-lg-2"></div>
