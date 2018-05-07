@@ -1,10 +1,8 @@
-<?php
-
-echo $this->header;
-
-?>
+<?php echo $this->header; ?>
+<!-- Content-Container -->
     <div class="container-fluid" id="main-color">
 
+        <!-- Meldung bei erfolgreicher Registrierung -->
         <?php if ($this->UserRegistered): ?>
             <div class="col-xs-0 col-md-1 col-lg-2"></div>
             <div class="col-xs-12 col-md-10 col-lg-8" style="text-align: center">
@@ -13,27 +11,27 @@ echo $this->header;
                 </h4>
             </div>
             <div class="col-xs-0 col-md-1 col-lg-2"></div>
-
-
+        
+        <!-- Formular für Daten zum Registrieren -->
         <?php else: ?>
 
             <!-- Reihe für immer zentrierte Überschrift -->
             <div class="row">
-                <div class="col-xs-0 col-md-1 col-lg-2"></div>
-                <div class="col-xs-12 col-md-10 col-lg-8">
+                <div class="col-xs-1 col-md-1 col-lg-2"></div>
+                <div class="col-xs-10 col-md-10 col-lg-8">
                     <h1 id="h1-modified">Registrieren</h1>
                 </div>
-                <div class="col-xs-0 col-md-1 col-lg-2"></div>
+                <div class="col-xs-1 col-md-1 col-lg-2"></div>
             </div>
 
+            <!-- Reihe für das Formular -->
             <div class="row">
-                <div class="col-xs-0 col-md-1 col-lg-2"></div>
-                <div class="col-xs-0 col-md-10 col-lg-8">
-
+                <div class="col-xs-1 col-md-1 col-lg-2"></div>
+                <div class="col-xs-10 col-md-10 col-lg-8">
+                    <!-- Das Formular -->
                     <form method="post" class="form-horizontal" id="registerForm" action="register">
-
+                        <!-- Fehlermeldung bei bereits registrierter E-Mail-Adresse -->
                         <?php if ($this->EmailInUse): true ?>
-
                             <div class="alert alert-danger alert-dismissible fade in" role="alert">
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -41,9 +39,7 @@ echo $this->header;
                                 <h4>Diese E-Mail-Adresse wird bereits verwendet!</h4>
                                 <p>Bitte verwenden Sie eine andere E-Mail-Adresse.</p>
                             </div>
-
                         <?php endif; ?>
-
 
                         <div class="form-group">
                             <label class="col-xs-12 col-md-2" for="email"><h2>E-Mail:</h2></label>
@@ -149,17 +145,10 @@ echo $this->header;
 
                             <input type="hidden" name="action" value="register">
                         </div>
-
                     </form>
                 </div>
-                <div class="col-xs-0 col-md-1 col-lg-2"></div>
+                <div class="col-xs-1 col-md-1 col-lg-2"></div>
             </div>
-
         <?php endif; ?>
-
     </div>
-<?php
-
-echo $this->footer;
-
-?>
+<?php echo $this->footer; ?>

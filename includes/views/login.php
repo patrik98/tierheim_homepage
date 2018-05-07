@@ -1,30 +1,27 @@
-<?php
-
-echo $this->header;
-
-?>
-
+<?php echo $this->header; ?>
+<!-- Content-Container -->
 <div class="container-fluid">
     <!-- Reihe für immer zentrierte Überschrift -->
     <div class="row">
-        <div class="col-xs-0 col-md-1 col-lg-2"></div>
-        <div class="col-xs-12 col-md-10 col-lg-8">
+        <div class="col-xs-1 col-md-1 col-lg-2"></div>
+        <div class="col-xs-10 col-md-10 col-lg-8">
             <h1 id="h1-modified">Login</h1>
         </div>
-
-        <div class="col-xs-0 col-md-1 col-lg-2">
+        <div class="col-xs-1 col-md-1 col-lg-2">
         </div>
     </div>
 
+    <!-- Reihe für Login-Formular -->
     <div class="row">
-        <div class="col-xs-0 col-md-1 col-lg-2"></div>
-        <div class="col-xs-12 col-md-10 col-lg-8">
-            <span id="login-text">Sie besitzen noch keinen Account? Dann können Sie sich <a style="font-weight: bold"
-                                                                                            href="register">hier registrieren.</a> </span>
-            <br/><br/>
+        <div class="col-xs-1 col-md-1 col-lg-2"></div>
+        <div class="col-xs-10 col-md-10 col-lg-8">
+            <span id="login-text">Sie besitzen noch keinen Account? Dann können Sie sich 
+                <p><a style="font-weight: bold" href="register">hier registrieren.</a></p>
+            </span>
 
+            <!-- Das Formular -->
             <form method="post" class="form-horizontal" action="login">
-
+                <!-- Fehlermeldung bei falschem Passwort einblenden -->
                 <?php if ($this->errorPasswd == true): ?>
                     <div class="alert alert-danger alert-dismissible fade in" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -52,26 +49,20 @@ echo $this->header;
                         <i class="fa fa-key fa-lg fa-fw" aria-hidden="true"></i>
                     </div>
                 </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-pull-2 col-xs-12 col-md-offset-4">
-                <button class="button" type="submit"> Login
-                </button>
             </div>
 
-            <input type="hidden" name="action" value="login">
+            <div class="form-group">
+                <div class="col-xs-12 col-xs-offset-1 col-md-offset-2">
+                    <button class="button" type="submit">Login</button>
+                </div>
+                <input type="hidden" name="action" value="login">
+                </div>
+            </form>
         </div>
-        </form>
+        <div class="col-xs-0 col-md-1 col-lg-2"></div>
     </div>
-    <div class="col-xs-0 col-md-1 col-lg-2"></div>
-</div>
 </div>
 
-<?php
-
-echo $this->footer;
-
-?>
+<?php echo $this->footer; ?>
 
 
