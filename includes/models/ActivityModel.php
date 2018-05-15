@@ -5,23 +5,23 @@
 class ActivityModel
 {
 
-	public static function getAllActivities($tierId)
+	public static function getAllActivities($aktId)
 	{
 		$db = new Database();
 
-		$sql = "SELECT * FROM map_aktivitaet WHERE aktId=".intval($tierId);
+		$sql = "SELECT t.tierid, m.termin, m.bezeichnung, t.name FROM map_aktivitaet m JOIN tier t ON m.tier=t.tierid WHERE m.tier=".intval($aktId);
 		$result = $db->query($sql);
 
 		if($db->numRows($result) > 0)
 		{
-			$tiereArray = array();
+			$aktArray = array();
 
 			while($row = $db->fetchObject($result))
 			{
-				$tiereArray[] = $row;
+				$aktArray[] = $row;
 			}
 
-			return $tiereArray;
+			return $aktArray;
 		}
 
 		return null;
