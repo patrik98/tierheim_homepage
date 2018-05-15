@@ -42,8 +42,8 @@ echo $this->header;
                 <hr class="bar">
                 <ul class="animal-data">
                     <li>Name: </li> <p><?php echo $this->tierObj->name; ?></p>
-                    <li>Geschlecht: </li> <p><?php echo $geschlecht;?> <?php if($tier->gbezeichnung=='männlich'):?><i class ="fas fa-mars"></i><?php else:?><i class ="fas fa-venus"></i><?php endif;?></p>
-                    <li>Rasse: </li> <p><?php echo $tier->rasse; ?></p>
+                    <li>Geschlecht: </li> <p><?php echo $this->tierObj->gbezeichnung;?> <?php if($this->tierObj->gbezeichnung=='männlich'):?><i class ="fas fa-mars"></i><?php else:?><i class ="fas fa-venus"></i><?php endif;?></p>
+                    <li>Rasse: </li> <p><?php echo $this->tierObj->rasse; ?></p>
                     <li>Alter: </li> <p><?php echo $age." ".$zeiteinheit; ?></p>
                     <li>Geburtsdatum: </li> <p><?php echo $gebdat->format('d.m.Y');?></p>
                 <br/>
@@ -59,7 +59,10 @@ echo $this->header;
             <a class="button pull-left" href="activity">Aktivität hinzufügen</a>
         </div>
 
-        <?php if($this->activities): ?>
+        <?php if($this->activities):
+            $date = date_create($this->activities->termin);
+
+            ?>
         <div class="activities">
             <table class="table table-striped">
                 <thead>
@@ -71,7 +74,7 @@ echo $this->header;
                 <tbody>
                 <?php foreach($this->activities as $activity): ?>
                     <tr>
-                        <td><?php echo $activity->termin; ?></td>
+                        <td><?php echo $date->format('d.m.Y'); ?></td>
                         <td><?php echo $activity->bezeichnung; ?></td>
                     </tr>
                 <?php endforeach; ?>

@@ -5,7 +5,7 @@ class TierModel
 	public static function getTierById($tierid)
 	{
 		$db = new Database();
-		$sql = "SELECT * FROM tier WHERE tierid=".intval($tierid);
+		$sql = "SELECT t.tierid, t.name, t.gebdat, ta.bezeichnung AS 'rasse', g.bezeichnung AS 'gbezeichnung', t.bildlink FROM tier t JOIN tierart ta ON t.tierart=ta.tierartid JOIN geschlecht g ON t.geschlecht = g.gid WHERE t.tierid=".intval($tierid);
 
 		$result = $db->query($sql);
 

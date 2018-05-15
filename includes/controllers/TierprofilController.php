@@ -33,6 +33,7 @@ class TierprofilController extends Controller
 
 
         if (isset($_GET['id']) && $_GET['id'] != '') {
+            $this->view->tier = TierModel::getAlleTiere();
             $this->view->tierObj = TierModel::getTierById($_GET['id']);
             $this->view->activities = ActivityModel::getAllActivities($_GET['id']);
         }
