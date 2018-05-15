@@ -5,7 +5,7 @@
 class ActivityModel
 {
 
-	/*public static function getAllActivities($tierId)
+	public static function getAllActivities($tierId)
 	{
 		$db = new Database();
 
@@ -25,7 +25,7 @@ class ActivityModel
 		}
 
 		return null;
-	}*/
+	}
 
     public static function createNewActivity($data)
     {

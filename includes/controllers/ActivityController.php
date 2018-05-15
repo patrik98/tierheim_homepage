@@ -9,21 +9,8 @@
 class ActivityController extends Controller{
 
     protected $viewFileName = "activity"; //this will be the View that gets the data...
-    protected $loginRequired = false;
+    protected $loginRequired = true;
 
-    public function __construct($pageName)
-    {
-        $this->pageName = $pageName;
-
-        $this->user = new User();
-
-        $this->user->authenticate(false);
-
-        $this->view = new View($this->viewFileName, $pageName);
-
-        $this->run();
-        $this->output();
-    }
 
     public function run()
     {
@@ -43,7 +30,7 @@ class ActivityController extends Controller{
     private function checkForActivityPost()
     {
         if (!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'activity') {
-            $requiredFields = array('tier','termin', 'bezeichnung','nutzerid');
+            $requiredFields = array('tier','termin', 'bezeichnung');
 
             $error = false;
             $errorFields = array();
@@ -60,7 +47,7 @@ class ActivityController extends Controller{
                 $termin = $_POST['termin'];
                 $activity = $_POST['bezeichnung'];
                 $tier = $_POST['tier'];
-                $nutzer = $_POST['nutzerid'];
+                $nutzer = $this->user->id;
 
             }
 

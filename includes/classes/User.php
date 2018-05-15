@@ -103,7 +103,7 @@ class User extends Database
         if(password_verify($password, $row->passwort))
         {
             $this->username = $username;
-            $this->id = $row-id;
+            $this->id = $row->nutzerid;
             $this->isLoggedIn = true;
 
             return true;

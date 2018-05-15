@@ -59,6 +59,26 @@ echo $this->header;
             <a class="button pull-left" href="activity">Aktivität hinzufügen</a>
         </div>
 
+        <?php if($this->activities): ?>
+        <div class="activities">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Datum</th>
+                    <th scope="col">Aktivität</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach($this->activities as $activity): ?>
+                    <tr>
+                        <td><?php echo $activity->termin; ?></td>
+                        <td><?php echo $activity->bezeichnung; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+        <?php endif; ?>
 
         <!-- Übersicht Aktivitäten -->
 
